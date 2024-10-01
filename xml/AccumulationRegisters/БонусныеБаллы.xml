@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AccumulationRegister uuid="e08814ae-3445-41c1-81d5-77223b82a878">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.БонусныеБаллы" category="Record">
+				<xr:TypeId>ffa9342e-77b8-4606-a436-080c7859e8cf</xr:TypeId>
+				<xr:ValueId>9e213432-3c60-4d50-a1c9-68d4c9d767b9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.БонусныеБаллы" category="Manager">
+				<xr:TypeId>780ea28b-8516-4470-b2bf-6cad19b01b4a</xr:TypeId>
+				<xr:ValueId>ec1c39be-6f7b-44e9-974f-02e1a46e13b7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.БонусныеБаллы" category="Selection">
+				<xr:TypeId>c8810992-5f96-4329-b06c-9cd9b46391a5</xr:TypeId>
+				<xr:ValueId>cf8f09e9-31ac-4a7b-817a-07b97659627c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.БонусныеБаллы" category="List">
+				<xr:TypeId>febf6492-36a1-4c82-9ae8-c0d884af44b7</xr:TypeId>
+				<xr:ValueId>f2ae62a7-dbc0-475b-b942-b1f31305a083</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.БонусныеБаллы" category="RecordSet">
+				<xr:TypeId>d9cfe4b3-dfa7-4122-95f5-a01a22c722e9</xr:TypeId>
+				<xr:ValueId>2cc7dd14-30e0-4562-956f-b0037fd8fba3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.БонусныеБаллы" category="RecordKey">
+				<xr:TypeId>dfb3bce1-6349-41fb-b53b-e125fefe8c8e</xr:TypeId>
+				<xr:ValueId>e87c0fe5-f284-4088-84ac-fc358cff71d2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>БонусныеБаллы</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>e3cba07e-b273-45b0-98b0-fb46a8dc5694</ExtendedConfigurationObject>
+			<RegisterType>Balance</RegisterType>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="79ef13bd-64c8-46a1-b98f-0c122213bc8a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Начислено</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c272e1ef-3e78-4217-a586-b04d493ae9c7</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="b17a3e81-8351-498a-b85e-5c8d9102e973">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>БонуснаяПрограммаЛояльности</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d465f3dc-4b7b-40a0-970e-da046f213d6d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.БонусныеПрограммыЛояльности</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="8c97c3cb-c371-4f42-9016-47ea9b847e8b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Партнер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f1f1f3cd-c388-438a-8a49-8e43fd10ced8</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</AccumulationRegister>
+</MetaDataObject>

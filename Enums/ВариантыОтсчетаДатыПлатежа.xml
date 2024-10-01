@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="d65e1e3a-540f-4040-bb2c-bfb70bf1907d">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВариантыОтсчетаДатыПлатежа" category="Ref">
+				<xr:TypeId>59814e94-058e-409f-af68-a40961d089ea</xr:TypeId>
+				<xr:ValueId>1fe02146-d058-4d53-af7a-212a3244d17f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВариантыОтсчетаДатыПлатежа" category="Manager">
+				<xr:TypeId>ad23498a-5706-4c4c-aeff-b2c493578b0e</xr:TypeId>
+				<xr:ValueId>39e3aebc-a590-48e7-a421-790aac1f8eaf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВариантыОтсчетаДатыПлатежа" category="List">
+				<xr:TypeId>f4cb7c65-0a41-4ade-b864-2f27a4cef73a</xr:TypeId>
+				<xr:ValueId>1807a187-dbd6-4a47-9f5d-eb7b5ec49a0e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВариантыОтсчетаДатыПлатежа</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>5abb70ea-0663-4378-919d-0ea83e97d3dc</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>
