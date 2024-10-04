@@ -684,18 +684,6 @@
 					</Type>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="d8cca3b9-643f-40e6-8605-cd8ff5d0665f">
-				<InternalInfo/>
-				<Properties>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Name>УдалитьПорядокОплаты</Name>
-					<Comment/>
-					<ExtendedConfigurationObject>c2b51feb-6587-4a28-8852-406f8fefee03</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>cfg:EnumRef.УдалитьПорядокОплатыПоСоглашениям</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
 			<Attribute uuid="cd0d9a6f-170a-4e01-9080-f8a7d67ca623">
 				<InternalInfo/>
 				<Properties>
@@ -729,21 +717,6 @@
 					<ExtendedConfigurationObject>421edd92-2b38-4f12-aa73-f25cdff0897c</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="a388a1c4-6142-4685-a39d-691017a1ba39">
-				<InternalInfo/>
-				<Properties>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Name>УдалитьДатаПлатежа</Name>
-					<Comment/>
-					<ExtendedConfigurationObject>30a76452-a7d2-4896-9a08-f3af185f6014</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
-						</v8:DateQualifiers>
 					</Type>
 				</Properties>
 			</Attribute>
@@ -990,18 +963,6 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
-					</Type>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="fb4fe472-b918-4da8-8066-edccecc5e995">
-				<InternalInfo/>
-				<Properties>
-					<ObjectBelonging>Adopted</ObjectBelonging>
-					<Name>УдалитьТоварноТранспортнаяНакладнаяЕГАИС</Name>
-					<Comment/>
-					<ExtendedConfigurationObject>47f1d601-2e82-4788-a421-062d38aaae90</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>cfg:DocumentRef.ТТНВходящаяЕГАИС</v8:Type>
 					</Type>
 				</Properties>
 			</Attribute>
@@ -1442,18 +1403,6 @@
 							</Type>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="c2624d27-27b3-4acc-bab3-5b26e28b3bce">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьАналитикаУчетаПартий</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>5c264ec0-b3d6-4070-a460-94a4169667a3</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>cfg:CatalogRef.КлючиАналитикиУчетаПартий</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
 					<Attribute uuid="0e802f0d-6315-40f7-b5e9-0d9ef47f5bb6">
 						<InternalInfo/>
 						<Properties>
@@ -1525,52 +1474,6 @@
 							</Type>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="4f7da96d-e216-4568-9d32-833cb62dc1c0">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьАналитикаУчетаНоменклатурыТоварыУПартнеров</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>6ade10ff-9d6a-4c55-b509-482e5cba90d1</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>cfg:CatalogRef.КлючиАналитикиУчетаНоменклатуры</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="77f11152-1e79-40f0-bf42-df7691fd1e48">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьСтатусУказанияСерийНаСкладах</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>0ba1c989-59f9-4abf-90e0-e989236ae80a</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>2</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
-									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-								</v8:NumberQualifiers>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="2b3a3898-016f-44b0-b4fa-5b7dc7a3b7e3">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьСтатусУказанияСерийТоварыУПартнеров</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>d5930697-e1cc-4e08-8736-0c215e770d67</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>2</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
-									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-								</v8:NumberQualifiers>
-							</Type>
-						</Properties>
-					</Attribute>
 					<Attribute uuid="50e7b3dc-d252-4dcb-a9a4-3d2b1b774874">
 						<InternalInfo/>
 						<Properties>
@@ -1583,35 +1486,6 @@
 								<v8:NumberQualifiers>
 									<v8:Digits>15</v8:Digits>
 									<v8:FractionDigits>3</v8:FractionDigits>
-									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-								</v8:NumberQualifiers>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="47809862-322e-4ed4-8628-51f5adfe10e4">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьСтавкаНДС</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>d28548c6-5c5b-4810-aa0c-d796cb57d685</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>cfg:EnumRef.СтавкиНДС</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="ce4c3c01-2ad7-4234-a4d4-be44083f7b9c">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьНомерСтрокиДокументаПоставщика</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>fe232029-24c9-481d-960e-f429b8c424c5</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>xs:decimal</v8:Type>
-								<v8:NumberQualifiers>
-									<v8:Digits>5</v8:Digits>
-									<v8:FractionDigits>0</v8:FractionDigits>
 									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 								</v8:NumberQualifiers>
 							</Type>
@@ -1758,18 +1632,6 @@
 							</Type>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="a29925f8-c196-4959-a171-d10bdf1b27ad">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьАналитикаУчетаНоменклатурыТоварыУПартнеров</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>82217e20-cc2b-4783-b3be-537a20e35810</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>cfg:CatalogRef.КлючиАналитикиУчетаНоменклатуры</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
 					<Attribute uuid="96762233-35a9-4b3d-9c59-76bf9d831fa6">
 						<InternalInfo/>
 						<Properties>
@@ -1832,18 +1694,6 @@
 							<ExtendedConfigurationObject>1c4f7076-940f-4965-8743-890b56956581</ExtendedConfigurationObject>
 							<Type>
 								<v8:Type>cfg:CatalogRef.ВидыЗапасов</v8:Type>
-							</Type>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="09441f7b-1e7b-42ce-96d0-9b2287954cac">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьСтавкаНДС</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>0280c024-9e40-4b9b-baf0-d693a11c1e31</ExtendedConfigurationObject>
-							<Type>
-								<v8:Type>cfg:EnumRef.СтавкиНДС</v8:Type>
 							</Type>
 						</Properties>
 					</Attribute>
@@ -1975,18 +1825,6 @@
 					<ExtendedConfigurationObject>fe8e86bc-a667-4a44-bce5-642d9aeae84c</ExtendedConfigurationObject>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="e902600c-e6c0-46c9-83bf-a1b53d5ca219">
-						<InternalInfo/>
-						<Properties>
-							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>УдалитьЗаказ</Name>
-							<Comment/>
-							<ExtendedConfigurationObject>dba6ee18-1288-4c99-9d00-22e2da0adb43</ExtendedConfigurationObject>
-							<Type>
-								<v8:TypeSet>cfg:DefinedType.ОбъектРасчетов</v8:TypeSet>
-							</Type>
-						</Properties>
-					</Attribute>
 					<Attribute uuid="224bf764-feb2-4d54-adf1-d91df646fb07">
 						<InternalInfo/>
 						<Properties>

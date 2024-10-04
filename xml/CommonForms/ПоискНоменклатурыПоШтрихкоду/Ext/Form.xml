@@ -54,6 +54,7 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПояснениеКФормеРасширеннаяПодсказка" id="62"/>
@@ -91,6 +92,7 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомандыТаблицыШтрихкодовРасширеннаяПодсказка" id="80"/>
@@ -102,6 +104,7 @@
 							<v8:content>Кнопки создания</v8:content>
 						</v8:item>
 					</Title>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКнопокСозданияРасширеннаяПодсказка" id="94"/>
@@ -140,6 +143,7 @@
 					</Title>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<HorizontalAlign>Right</HorizontalAlign>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДекорацииДлительнойОперацииРасширеннаяПодсказка" id="86"/>
@@ -574,6 +578,7 @@
 					</v8:item>
 				</Title>
 				<Group>AlwaysHorizontal</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаПояснениеКФормеРасширеннаяПодсказка" id="62"/>
@@ -611,6 +616,7 @@
 					</v8:item>
 				</Title>
 				<Group>AlwaysHorizontal</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаКомандыТаблицыШтрихкодовРасширеннаяПодсказка" id="80"/>
@@ -622,6 +628,7 @@
 								<v8:content>Кнопки создания</v8:content>
 							</v8:item>
 						</Title>
+						<Behavior>Usual</Behavior>
 						<Representation>None</Representation>
 						<ShowTitle>false</ShowTitle>
 						<ExtendedTooltip name="ГруппаКнопокСозданияРасширеннаяПодсказка" id="94"/>
@@ -660,6 +667,7 @@
 						</Title>
 						<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 						<HorizontalAlign>Right</HorizontalAlign>
+						<Behavior>Usual</Behavior>
 						<Representation>None</Representation>
 						<ShowTitle>false</ShowTitle>
 						<ExtendedTooltip name="ГруппаДекорацииДлительнойОперацииРасширеннаяПодсказка" id="86"/>

@@ -187,6 +187,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="253"/>
@@ -199,6 +200,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаШапкаЛевоExtendedTooltip" id="254"/>
@@ -211,6 +213,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ThroughAlign>DontUse</ThroughAlign>
@@ -260,6 +263,7 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаШапкаПравоExtendedTooltip" id="259"/>
@@ -280,6 +284,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа1" id="420">
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="421"/>
@@ -305,6 +310,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЦеныExtendedTooltip" id="263"/>
@@ -336,6 +342,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<ExtendedTooltip name="ГруппаВыберитеВидыЦенExtendedTooltip" id="266"/>
 									<ChildItems>
 										<Table name="ВыбранныеЦены" id="104">
@@ -506,6 +513,7 @@
 											</Title>
 											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ВидыЦенПанельМастераExtendedTooltip" id="282"/>
@@ -546,6 +554,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<ExtendedTooltip name="ГруппаУкажитеНоменклатуруУточнитеЦеныExtendedTooltip" id="286"/>
 									<ChildItems>
 										<Table name="ДеревоЦен" id="38">
@@ -1135,6 +1144,7 @@
 													<v8:content>Информация</v8:content>
 												</v8:item>
 											</Title>
+											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="398"/>
 											<ChildItems>
@@ -1162,6 +1172,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="УстановкаЦенПанельМастераExtendedTooltip" id="350"/>
@@ -1190,6 +1201,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="411"/>
@@ -1202,6 +1214,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПодвалExtendedTooltip" id="352"/>
@@ -1414,6 +1427,7 @@
 					</v8:item>
 				</Title>
 				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="253"/>
@@ -1426,6 +1440,7 @@
 							</v8:item>
 						</Title>
 						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
 						<Representation>None</Representation>
 						<ShowTitle>false</ShowTitle>
 						<ExtendedTooltip name="ГруппаШапкаЛевоExtendedTooltip" id="254"/>
@@ -1438,6 +1453,7 @@
 									</v8:item>
 								</Title>
 								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
 								<Representation>None</Representation>
 								<ShowTitle>false</ShowTitle>
 								<ThroughAlign>DontUse</ThroughAlign>
@@ -1487,6 +1503,7 @@
 							</v8:item>
 						</Title>
 						<Group>Horizontal</Group>
+						<Behavior>Usual</Behavior>
 						<Representation>None</Representation>
 						<ShowTitle>false</ShowTitle>
 						<ExtendedTooltip name="ГруппаШапкаПравоExtendedTooltip" id="259"/>
@@ -1507,6 +1524,7 @@
 				</ChildItems>
 			</UsualGroup>
 			<UsualGroup name="Группа1" id="420">
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="421"/>
@@ -1532,6 +1550,7 @@
 					</v8:item>
 				</Title>
 				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>NormalSeparation</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаЦеныExtendedTooltip" id="263"/>
@@ -1563,6 +1582,7 @@
 											</v8:item>
 										</Title>
 										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
 										<ExtendedTooltip name="ГруппаВыберитеВидыЦенExtendedTooltip" id="266"/>
 										<ChildItems>
 											<Table name="ВыбранныеЦены" id="104">
@@ -1733,6 +1753,7 @@
 												</Title>
 												<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 												<Group>Horizontal</Group>
+												<Behavior>Usual</Behavior>
 												<Representation>None</Representation>
 												<ShowTitle>false</ShowTitle>
 												<ExtendedTooltip name="ВидыЦенПанельМастераExtendedTooltip" id="282"/>
@@ -1773,6 +1794,7 @@
 											</v8:item>
 										</Title>
 										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
 										<ExtendedTooltip name="ГруппаУкажитеНоменклатуруУточнитеЦеныExtendedTooltip" id="286"/>
 										<ChildItems>
 											<Table name="ДеревоЦен" id="38">
@@ -2362,6 +2384,7 @@
 														<v8:content>Информация</v8:content>
 													</v8:item>
 												</Title>
+												<Behavior>Usual</Behavior>
 												<ShowTitle>false</ShowTitle>
 												<ExtendedTooltip name="ГруппаИнформацияРасширеннаяПодсказка" id="398"/>
 												<ChildItems>
@@ -2389,6 +2412,7 @@
 													</v8:item>
 												</Title>
 												<Group>Vertical</Group>
+												<Behavior>Usual</Behavior>
 												<Representation>None</Representation>
 												<ShowTitle>false</ShowTitle>
 												<ExtendedTooltip name="УстановкаЦенПанельМастераExtendedTooltip" id="350"/>
@@ -2417,6 +2441,7 @@
 					</v8:item>
 				</Title>
 				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>NormalSeparation</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="411"/>
@@ -2429,6 +2454,7 @@
 					</v8:item>
 				</Title>
 				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаПодвалExtendedTooltip" id="352"/>

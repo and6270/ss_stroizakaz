@@ -15,6 +15,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КодМаркаExtendedTooltip" id="44"/>
@@ -65,6 +66,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГрузоподъемностьВместимостьExtendedTooltip" id="50"/>
@@ -133,6 +135,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ПодвалExtendedTooltip" id="56"/>
@@ -147,6 +150,7 @@
 					<Width>23</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>NormalSeparation</Representation>
 					<ExtendedTooltip name="ЛицензионнаяКарточкаExtendedTooltip" id="57"/>
 					<ChildItems>
@@ -158,6 +162,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="СерияНомерExtendedTooltip" id="58"/>
@@ -254,6 +259,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПодвалПравоExtendedTooltip" id="63"/>
@@ -267,6 +273,7 @@
 							</Title>
 							<Height>5</Height>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаПрицепExtendedTooltip" id="64"/>
 							<ChildItems>
@@ -309,6 +316,7 @@
 					</v8:item>
 				</Title>
 				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="КодМаркаExtendedTooltip" id="44"/>
@@ -359,6 +367,7 @@
 					</v8:item>
 				</Title>
 				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГрузоподъемностьВместимостьExtendedTooltip" id="50"/>
@@ -427,6 +436,7 @@
 					</v8:item>
 				</Title>
 				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ПодвалExtendedTooltip" id="56"/>
@@ -441,6 +451,7 @@
 						<Width>23</Width>
 						<HorizontalStretch>false</HorizontalStretch>
 						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
 						<Representation>NormalSeparation</Representation>
 						<ExtendedTooltip name="ЛицензионнаяКарточкаExtendedTooltip" id="57"/>
 						<ChildItems>
@@ -452,6 +463,7 @@
 									</v8:item>
 								</Title>
 								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
 								<Representation>None</Representation>
 								<ShowTitle>false</ShowTitle>
 								<ExtendedTooltip name="СерияНомерExtendedTooltip" id="58"/>
@@ -548,6 +560,7 @@
 							</v8:item>
 						</Title>
 						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
 						<Representation>None</Representation>
 						<ShowTitle>false</ShowTitle>
 						<ExtendedTooltip name="ГруппаПодвалПравоExtendedTooltip" id="63"/>
@@ -561,6 +574,7 @@
 								</Title>
 								<Height>5</Height>
 								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
 								<Representation>NormalSeparation</Representation>
 								<ExtendedTooltip name="ГруппаПрицепExtendedTooltip" id="64"/>
 								<ChildItems>

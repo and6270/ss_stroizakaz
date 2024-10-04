@@ -41,6 +41,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКодКартыExtendedTooltip" id="82"/>
@@ -159,6 +160,7 @@
 			</ToolTip>
 			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПоискПоНомеруТелефонаРасширеннаяПодсказка" id="114"/>
@@ -177,6 +179,7 @@
 						</v8:item>
 					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПоискРасширеннаяПодсказка" id="123"/>
@@ -207,6 +210,7 @@
 							<v8:content>Группа партнер</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПартнерРасширеннаяПодсказка" id="128"/>
@@ -223,6 +227,7 @@
 		</UsualGroup>
 		<UsualGroup name="ГруппаКоманднаяПанель" id="60">
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="90"/>
 			<ChildItems>
@@ -446,6 +451,7 @@
 									</v8:item>
 								</Title>
 								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
 								<Representation>None</Representation>
 								<ShowTitle>false</ShowTitle>
 								<ExtendedTooltip name="ГруппаКодКартыExtendedTooltip" id="82"/>
@@ -551,6 +557,7 @@
 			</Pages>
 			<UsualGroup name="ГруппаКоманднаяПанель" id="60">
 				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="90"/>
 				<ChildItems>
