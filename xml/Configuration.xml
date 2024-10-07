@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>24.10.04</Version>
+			<Version>24.10.07</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -71,6 +71,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Продажи</Subsystem>
+			<Subsystem>Администрирование</Subsystem>
 			<StyleItem>ПоясняющийТекст</StyleItem>
 			<StyleItem>ИтогиФон</StyleItem>
 			<StyleItem>ЦветФонаВыделения</StyleItem>
@@ -104,6 +105,16 @@
 			<CommonPicture>ИконкаБелыйФонРаботаСНоменклатурой</CommonPicture>
 			<CommonPicture>ДоставкаКолонкаДоставлено</CommonPicture>
 			<CommonPicture>ТранспортнаяНакладная</CommonPicture>
+			<CommonPicture>НастройкаПродажи</CommonPicture>
+			<CommonPicture>Приоритеты</CommonPicture>
+			<CommonPicture>ЗагрузитьДокументыИзСкановФото</CommonPicture>
+			<CommonPicture>ОформитьПоРаспоряжению</CommonPicture>
+			<CommonPicture>СостоянияДокумента</CommonPicture>
+			<CommonPicture>СостояниеПроверкиКонтрагента</CommonPicture>
+			<CommonPicture>ВниманиеКрасный</CommonPicture>
+			<CommonPicture>ПустаяКартинка</CommonPicture>
+			<SessionParameter>ТекущийПользователь</SessionParameter>
+			<SessionParameter>РабочееМестоКлиента</SessionParameter>
 			<Role>Расш6270_ОсновнаяРоль</Role>
 			<CommonModule>КассовыеСменыВызовСервера</CommonModule>
 			<CommonModule>Расш6270_Отладка</CommonModule>
@@ -117,6 +128,7 @@
 			<CommonModule>Коннектор</CommonModule>
 			<EventSubscription>Расш6270_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>Расш6270_СправочникиПриКопировании</EventSubscription>
+			<EventSubscription>Расш6270_ДокументыПередЗаписью</EventSubscription>
 			<ScheduledJob>Расш6270_ВыгрузкаОстатковНаСайтМегагрупп</ScheduledJob>
 			<ScheduledJob>Расш6270_ВыгрузкаКоличестваТоваровНаЯндексМаркет</ScheduledJob>
 			<ScheduledJob>Расш6270_ОбработкаУведомлений</ScheduledJob>
@@ -203,6 +215,10 @@
 			<Catalog>ШтрихкодыУпаковокТоваров</Catalog>
 			<Catalog>Кассы</Catalog>
 			<Catalog>БонусныеПрограммыЛояльности</Catalog>
+			<Catalog>РабочиеМеста</Catalog>
+			<Catalog>ЭквайринговыеТерминалы</Catalog>
+			<Catalog>НастройкиРМК</Catalog>
+			<Catalog>ДоговорыЭквайринга</Catalog>
 			<Document>ЧекККМ</Document>
 			<Document>УстановкаЦенНоменклатуры</Document>
 			<Document>ЗаказКлиента</Document>
@@ -215,6 +231,9 @@
 			<Document>АвансовыйОтчет</Document>
 			<Document>НачислениеИСписаниеБонусныхБаллов</Document>
 			<Document>РасходныйКассовыйОрдер</Document>
+			<Document>ПриходныйКассовыйОрдер</Document>
+			<Document>ОперацияПоПлатежнойКарте</Document>
+			<Document>РеализацияТоваровУслуг</Document>
 			<Enum>СостоянияУстановокЦенНоменклатуры</Enum>
 			<Enum>ХозяйственныеОперации</Enum>
 			<Enum>СпособыДоставки</Enum>
@@ -252,6 +271,7 @@
 			<Enum>ВариантыОтсчетаДатыПлатежа</Enum>
 			<Enum>ВидыПравилНачисленияБонусныхБаллов</Enum>
 			<Enum>Периодичность</Enum>
+			<Enum>СпособыПроведенияПлатежей</Enum>
 			<Report>НеликвидыЧерезОбъект</Report>
 			<Report>ОтчетТорговаяНаценка</Report>
 			<Report>Расш6270_ОтчетОстаткиНаборов</Report>
@@ -281,6 +301,7 @@
 			<InformationRegister>Расш6270_Состояние</InformationRegister>
 			<InformationRegister>СостоянияПоОбъектамУчетаЭДО</InformationRegister>
 			<InformationRegister>Расш6270_ОстаткиДляСайта</InformationRegister>
+			<InformationRegister>Расш6270_ДоступыПользователей</InformationRegister>
 			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
 			<AccumulationRegister>ТоварыКОтгрузке</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>

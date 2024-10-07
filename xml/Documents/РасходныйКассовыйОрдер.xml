@@ -30,6 +30,9 @@
 			<ExtendedConfigurationObject>eae285fe-79a3-4d70-a64b-ccacfcabc3fb</ExtendedConfigurationObject>
 			<RegisterRecords/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаСпискаДокументов</Form>
+		</ChildObjects>
 	</Document>
 </MetaDataObject>

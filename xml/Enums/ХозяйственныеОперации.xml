@@ -85,6 +85,24 @@
 					<ExtendedConfigurationObject>693adf02-fccb-4cd9-a092-f9fa532b7983</ExtendedConfigurationObject>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="0e4137d6-957e-4822-8ffc-a5fcc72298bc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВыплатаЗарплатыЧерезКассу</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>240b34c3-b18a-47c5-9f2f-bd241e23e42a</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="693dad5a-4c9f-49c6-b95c-c06d8d465438">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВыплатаЗарплатыРаботнику</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>883d636d-f604-43b6-9d3c-4aa11be20085</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

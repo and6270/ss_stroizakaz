@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="a6f5561e-c0fa-4da2-bd92-f0be97394643">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.НастройкиРМК" category="Object">
+				<xr:TypeId>157e1d79-8c56-478c-b675-d0d9b825865f</xr:TypeId>
+				<xr:ValueId>cf5b5ca3-107b-418c-a6d5-a72782e018c4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.НастройкиРМК" category="Ref">
+				<xr:TypeId>c551724d-3316-4d2a-908f-e52d4fc89c0e</xr:TypeId>
+				<xr:ValueId>9d03b9ca-b72d-47e4-b041-816cea153b7b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.НастройкиРМК" category="Selection">
+				<xr:TypeId>ae9dcdbd-c6f7-4754-bcd0-ec3bbe19457d</xr:TypeId>
+				<xr:ValueId>52ca0208-3832-4880-b47a-d9b61141bceb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.НастройкиРМК" category="List">
+				<xr:TypeId>19547c55-cd40-4fa9-98af-6b76f923b2d1</xr:TypeId>
+				<xr:ValueId>b62e9f53-91f6-4870-a4df-3397a3f1dad7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.НастройкиРМК" category="Manager">
+				<xr:TypeId>e6a14780-a29d-41ac-b2bd-ee8f7f9ebf35</xr:TypeId>
+				<xr:ValueId>36cf258f-b908-450c-8650-1c14c1573fbb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НастройкиРМК</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>97c641e4-3f54-4778-9201-021ea4c93bd0</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="d4b31665-fa4f-4748-80dc-d30be9ac2002">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РабочееМесто</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7c95c5d8-d5a0-4de6-9ad3-3d7d867aad7b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РабочиеМеста</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="3c37a8eb-e004-4fd5-a552-b097d9b20341">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.НастройкиРМК.ЭквайринговыеТерминалы" category="TabularSection">
+						<xr:TypeId>72eb224f-aafb-45aa-a3b8-7c3036d7d894</xr:TypeId>
+						<xr:ValueId>ec06b885-2c11-47ca-aa0f-d0d6123810ba</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.НастройкиРМК.ЭквайринговыеТерминалы" category="TabularSectionRow">
+						<xr:TypeId>8ccf34c9-d717-4378-92f2-85cc38db217a</xr:TypeId>
+						<xr:ValueId>72faebf4-0f61-4f98-9b48-c8544bf289ae</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЭквайринговыеТерминалы</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e823d85e-9570-48ba-b4fb-2dc1e2f08e6f</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="1d85b34b-7809-42fa-9328-c828715c675b">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ЭквайринговыйТерминал</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>f962946b-dd51-459a-ba43-0d5d3d76d6a2</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ЭквайринговыеТерминалы</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

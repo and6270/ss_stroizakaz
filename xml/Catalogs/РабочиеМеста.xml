@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="cba93fd6-841b-4add-9af7-b308502f34c0">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РабочиеМеста" category="Object">
+				<xr:TypeId>dc91acc8-160d-4121-acb7-6c5a918a4932</xr:TypeId>
+				<xr:ValueId>371b0ef4-f49a-47d1-a704-8c45a7939f59</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РабочиеМеста" category="Ref">
+				<xr:TypeId>0029fec2-a4eb-4b9f-b6b1-e7cba826dfae</xr:TypeId>
+				<xr:ValueId>4168a442-06a1-4a32-8fbb-75ef95d46361</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РабочиеМеста" category="Selection">
+				<xr:TypeId>41d490ab-fd0f-4821-ad50-a43af49a46b3</xr:TypeId>
+				<xr:ValueId>d4dfcd9a-fda2-4b21-b8ad-300bad5763fa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РабочиеМеста" category="List">
+				<xr:TypeId>06999184-627e-4844-bc6b-c37eb2a75ec1</xr:TypeId>
+				<xr:ValueId>d66f3a39-b3fb-4730-8642-b3a938d073a3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РабочиеМеста" category="Manager">
+				<xr:TypeId>790713a6-d39f-4e23-b847-dd2c749e7ee9</xr:TypeId>
+				<xr:ValueId>7a8e82df-3a88-4da1-8d0e-7b2332714d10</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РабочиеМеста</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>6ddc408a-18ef-4b35-8242-26c2ef5ca3e8</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

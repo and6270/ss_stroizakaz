@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="6fe70712-f01f-4944-ba6c-5045ba6ec2ea">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыПроведенияПлатежей" category="Ref">
+				<xr:TypeId>f0ce64d9-9284-4ebe-809a-b373bf676ab7</xr:TypeId>
+				<xr:ValueId>b5d87f45-759e-4577-830f-be1bdd84943c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыПроведенияПлатежей" category="Manager">
+				<xr:TypeId>fd98ff38-cd79-478a-9da4-73420a87bb2f</xr:TypeId>
+				<xr:ValueId>054aa125-8d47-4869-8e41-9d343fc11c04</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыПроведенияПлатежей" category="List">
+				<xr:TypeId>05ad8c74-651a-4c2e-9170-61229d467306</xr:TypeId>
+				<xr:ValueId>ea2b3eb7-a37c-4b78-9603-27c604e63ebd</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СпособыПроведенияПлатежей</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c30be800-b675-43f2-a679-5aba56f0ce7e</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="6b807adf-7104-4a05-9c2c-7fb125e96fc0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЭквайринговыйТерминал</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>56c11172-f8c0-4094-a865-c61070148c3d</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="013f1e35-5275-4391-864b-7548078eb62b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СистемаБыстрыхПлатежей</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>61ce4c90-7ff1-4ab5-8b3b-7ce7292689fb</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fbc9fc4c-47f8-44fd-8221-c90a603e1b54">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИнтернетЭквайринг</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2f124ba6-c1b1-42ff-8402-ca051f36fa3f</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
