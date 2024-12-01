@@ -24,6 +24,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш6270_ОтчетТовароведа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш6270_ОтчетПеремещение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Расш6270_ОстаткиДляСайта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш6270_ОтчетПоследниеЗакупки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расш6270_ОтчетРезервыТоваров</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>24.10.19</Version>
+			<Version>24.11.30</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -126,6 +126,8 @@
 			<CommonModule>Расш6270_ПодпискиНаСобытия</CommonModule>
 			<CommonModule>ОбменССайтомПереопределяемый</CommonModule>
 			<CommonModule>Коннектор</CommonModule>
+			<CommonModule>ОтчетыКлиентПереопределяемый</CommonModule>
+			<CommonModule>Расш6270_Отчеты</CommonModule>
 			<EventSubscription>Расш6270_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>Расш6270_СправочникиПриКопировании</EventSubscription>
 			<EventSubscription>Расш6270_ДокументыПередЗаписью</EventSubscription>
@@ -145,6 +147,7 @@
 			<DefinedType>ХарактеристикаРаботаСНоменклатурой</DefinedType>
 			<DefinedType>ОснованияЭлектронныхДокументовЭДО</DefinedType>
 			<DefinedType>ОбъектРасчетов</DefinedType>
+			<DefinedType>РаспоряжениеНаОтгрузку</DefinedType>
 			<CommonCommand>Расш6270_СоздатьУстановкуЦенНоменклатуры</CommonCommand>
 			<Constant>Расш6270_КодДоступаСайта</Constant>
 			<Constant>Расш6270_Доступ</Constant>
@@ -281,6 +284,8 @@
 			<Report>Расш6270_ОтчетСнабжение2024</Report>
 			<Report>Расш6270_ОтчетТовароведа</Report>
 			<Report>Расш6270_ОтчетПеремещение</Report>
+			<Report>Расш6270_ОтчетПоследниеЗакупки</Report>
+			<Report>Расш6270_ОтчетРезервыТоваров</Report>
 			<DataProcessor>ВозвратСОбъектов</DataProcessor>
 			<DataProcessor>ЗагрузкаТоваровИзВнешнихФайлов</DataProcessor>
 			<DataProcessor>Расш6270_УстановкаЦенНоменклатурыИзТабДок</DataProcessor>
@@ -305,6 +310,7 @@
 			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
 			<AccumulationRegister>ТоварыКОтгрузке</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
+			<AccumulationRegister>Закупки</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СтатьиРасходов</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>

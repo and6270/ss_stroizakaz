@@ -76,6 +76,18 @@
 					</Type>
 				</Properties>
 			</Dimension>
+			<Dimension uuid="d951fb38-4ca3-493d-8311-2aa5dcd0bc69">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОтгрузки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>15e1ecdb-719e-4125-ad2a-23f7faa9d25e</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.РаспоряжениеНаОтгрузку</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
 		</ChildObjects>
 	</AccumulationRegister>
 </MetaDataObject>
