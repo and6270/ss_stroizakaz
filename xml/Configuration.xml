@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>24.11.30</Version>
+			<Version>24.12.11</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -286,6 +286,7 @@
 			<Report>Расш6270_ОтчетПеремещение</Report>
 			<Report>Расш6270_ОтчетПоследниеЗакупки</Report>
 			<Report>Расш6270_ОтчетРезервыТоваров</Report>
+			<Report>Расш6270_ОтчетИнвентаризация</Report>
 			<DataProcessor>ВозвратСОбъектов</DataProcessor>
 			<DataProcessor>ЗагрузкаТоваровИзВнешнихФайлов</DataProcessor>
 			<DataProcessor>Расш6270_УстановкаЦенНоменклатурыИзТабДок</DataProcessor>
@@ -311,6 +312,7 @@
 			<AccumulationRegister>ТоварыКОтгрузке</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
 			<AccumulationRegister>Закупки</AccumulationRegister>
+			<AccumulationRegister>ЗапасыИПотребности</AccumulationRegister>
 			<ChartOfCharacteristicTypes>СтатьиРасходов</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>
