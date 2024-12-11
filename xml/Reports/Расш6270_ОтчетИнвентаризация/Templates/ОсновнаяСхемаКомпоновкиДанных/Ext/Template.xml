@@ -7,6 +7,16 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
 			<dataPath>Резерв</dataPath>
 			<field>Резерв</field>
 			<title xsi:type="v8:LocalStringType">
@@ -27,19 +37,6 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Номенклатура</dataPath>
-			<field>Номенклатура</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номенклатура</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Код</dataPath>
 			<field>Код</field>
 			<title xsi:type="v8:LocalStringType">
@@ -48,13 +45,6 @@
 					<v8:content>Код</v8:content>
 				</v8:item>
 			</title>
-			<valueType>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Цена</dataPath>
@@ -84,8 +74,9 @@
 ИЗ
 	РегистрНакопления.ЗапасыИПотребности.Остатки(
 			,
-			Номенклатура В
+			(Склад, Номенклатура) В
 				(ВЫБРАТЬ
+					&amp;Склад,
 					ВТ_Номенклатура.Ссылка КАК Ссылка
 				ИЗ
 					ВТ_Номенклатура КАК ВТ_Номенклатура)) КАК ЗапасыИПотребностиОстатки
@@ -99,8 +90,9 @@
 ИЗ
 	РегистрНакопления.ТоварыКОтгрузке.Остатки(
 			,
-			Номенклатура В
+			(Склад, Номенклатура) В
 				(ВЫБРАТЬ
+					&amp;Склад,
 					ВТ_Номенклатура.Ссылка КАК Ссылка
 				ИЗ
 					ВТ_Номенклатура КАК ВТ_Номенклатура)) КАК ТоварыКОтгрузкеОстатки
@@ -124,33 +116,25 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	ЕСТЬNULL(ВТ_Остатки.Номенклатура, ВТ_Резерв.Номенклатура) КАК Номенклатура,
 	ЕСТЬNULL(ВТ_Остатки.ВНаличииОстаток, 0) КАК Остаток,
-	ЕСТЬNULL(ВТ_Резерв.ВРезервеОстаток, 0) КАК Резерв
-ПОМЕСТИТЬ ВТ_ОстаткиРезервы
-ИЗ
-	ВТ_Остатки КАК ВТ_Остатки
-		ПОЛНОЕ СОЕДИНЕНИЕ ВТ_Резерв КАК ВТ_Резерв
-		ПО ВТ_Остатки.Номенклатура = ВТ_Резерв.Номенклатура
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
-	ВТ_ОстаткиРезервы.Номенклатура КАК Номенклатура,
-	ВТ_ОстаткиРезервы.Остаток КАК Остаток,
-	ВТ_ОстаткиРезервы.Резерв КАК Резерв,
-	ЕСТЬNULL(ВТ_Цены.Цена, 0) КАК Цена,
-	ВТ_ОстаткиРезервы.Номенклатура.Код КАК Код
+	ЕСТЬNULL(ВТ_Резерв.ВРезервеОстаток, 0) КАК Резерв,
+	ВТ_Номенклатура.Ссылка КАК Номенклатура,
+	ВТ_Номенклатура.Ссылка.Код КАК Код,
+	ВТ_Цены.Цена КАК Цена
 {ВЫБРАТЬ
-	Номенклатура.*,
 	Остаток,
 	Резерв,
-	Цена,
-	Код}
+	Номенклатура.*,
+	Код,
+	Цена}
 ИЗ
-	ВТ_ОстаткиРезервы КАК ВТ_ОстаткиРезервы
+	ВТ_Номенклатура КАК ВТ_Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Резерв КАК ВТ_Резерв
+		ПО ВТ_Номенклатура.Ссылка = ВТ_Резерв.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Остатки КАК ВТ_Остатки
+		ПО ВТ_Номенклатура.Ссылка = ВТ_Остатки.Номенклатура
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Цены КАК ВТ_Цены
-		ПО ВТ_ОстаткиРезервы.Номенклатура = ВТ_Цены.Номенклатура</query>
+		ПО ВТ_Номенклатура.Ссылка = ВТ_Цены.Номенклатура</query>
 		<autoFillFields>false</autoFillFields>
 	</dataSet>
 	<calculatedField>
@@ -183,6 +167,16 @@
 			</v8:item>
 		</title>
 	</calculatedField>
+	<calculatedField>
+		<dataPath>ДатаОтчета</dataPath>
+		<expression>ТекущаяДата()</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата отчета</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
 	<parameter>
 		<name>ВидНоменклатуры</name>
 		<title xsi:type="v8:LocalStringType">
@@ -207,6 +201,20 @@
 		</title>
 		<valueType>
 			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦен</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Склад</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Склад</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Склады</v8:Type>
 		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
@@ -257,6 +265,11 @@
 					<dcscor:value xsi:nil="true"/>
 					<dcsset:userSettingID>61c31cd0-6e6d-47a7-b0a7-b8f5d8fb27fc</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Склад</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>08fbd4ae-c745-4afe-8b65-3d2ad7c0f049</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -274,6 +287,23 @@
 					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ДатаОтчета</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
