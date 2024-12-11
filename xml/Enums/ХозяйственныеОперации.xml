@@ -103,6 +103,24 @@
 					<ExtendedConfigurationObject>883d636d-f604-43b6-9d3c-4aa11be20085</ExtendedConfigurationObject>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="8a1a5fa3-eb9a-4e29-80ef-8beb869db758">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПеремещениеТоваровМеждуФилиалами</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f225cb28-e5ab-48fc-80a6-180753692cee</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c9804c83-b222-416a-bca1-87cfd6ae10fb">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПеремещениеТоваров</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1dfdfca3-6595-4afd-a12f-88601fce8c82</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

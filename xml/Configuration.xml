@@ -128,6 +128,8 @@
 			<CommonModule>Коннектор</CommonModule>
 			<CommonModule>ОтчетыКлиентПереопределяемый</CommonModule>
 			<CommonModule>Расш6270_Отчеты</CommonModule>
+			<CommonModule>РозничныеПродажи</CommonModule>
+			<CommonModule>РозничныеПродажиКлиент</CommonModule>
 			<EventSubscription>Расш6270_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>Расш6270_СправочникиПриКопировании</EventSubscription>
 			<EventSubscription>Расш6270_ДокументыПередЗаписью</EventSubscription>
@@ -148,6 +150,7 @@
 			<DefinedType>ОснованияЭлектронныхДокументовЭДО</DefinedType>
 			<DefinedType>ОбъектРасчетов</DefinedType>
 			<DefinedType>РаспоряжениеНаОтгрузку</DefinedType>
+			<DefinedType>ФизическоеЛицо</DefinedType>
 			<CommonCommand>Расш6270_СоздатьУстановкуЦенНоменклатуры</CommonCommand>
 			<Constant>Расш6270_КодДоступаСайта</Constant>
 			<Constant>Расш6270_Доступ</Constant>
@@ -237,6 +240,7 @@
 			<Document>ПриходныйКассовыйОрдер</Document>
 			<Document>ОперацияПоПлатежнойКарте</Document>
 			<Document>РеализацияТоваровУслуг</Document>
+			<Document>ЗаказНаПеремещение</Document>
 			<Enum>СостоянияУстановокЦенНоменклатуры</Enum>
 			<Enum>ХозяйственныеОперации</Enum>
 			<Enum>СпособыДоставки</Enum>
