@@ -36,7 +36,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Расш6270 состояние</v8:content>
+					<v8:content>Состояние</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -158,6 +158,7 @@
 					<Comment/>
 					<Type>
 						<v8:Type>cfg:DocumentRef.УстановкаЦенНоменклатуры</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
 						<v8:Type>cfg:DocumentRef.ПриобретениеТоваровУслуг</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>

@@ -68,6 +68,7 @@
 				</Properties>
 			</Attribute>
 			<Form>ФормаСпискаДокументов</Form>
+			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="ef8f9883-81cc-4388-88c7-52c9fbcc3811">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ЗаказКлиента.ДополнительныеРеквизиты" category="TabularSection">

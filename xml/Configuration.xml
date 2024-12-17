@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>24.12.13</Version>
+			<Version>24.12.17</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -130,6 +130,7 @@
 			<CommonModule>Расш6270_Отчеты</CommonModule>
 			<CommonModule>РозничныеПродажи</CommonModule>
 			<CommonModule>РозничныеПродажиКлиент</CommonModule>
+			<CommonModule>Расш6270_Битрикс24</CommonModule>
 			<EventSubscription>Расш6270_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>Расш6270_СправочникиПриКопировании</EventSubscription>
 			<EventSubscription>Расш6270_ДокументыПередЗаписью</EventSubscription>
@@ -159,6 +160,7 @@
 			<Constant>Расш6270_ЧатЯндексМаркета</Constant>
 			<Constant>Расш6270_ЧатСтройЗаказ</Constant>
 			<Constant>Расш6270_ПоследнийЗагруженныйЗаказ</Constant>
+			<Constant>Расш6270_БитриксВебхук</Constant>
 			<CommonForm>ПоискНоменклатурыПоШтрихкоду</CommonForm>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Номенклатура</Catalog>
