@@ -52,6 +52,40 @@
 					</Type>
 				</Properties>
 			</Resource>
+			<Resource uuid="60f70433-3855-4314-8a8e-791258d79afc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РезервироватьПоМереПоступления</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7db60568-8a3c-4c91-ad5b-f1c37f1dff6d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="bcd3baf2-67e4-4757-9170-f80cd507e93c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РезервироватьНаСкладе</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>63b04ee8-431e-43e1-86d7-a31699fe5f9d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
 			<Dimension uuid="73a0aee3-4a65-40e8-b35f-78831d199157">
 				<InternalInfo/>
 				<Properties>
@@ -73,6 +107,33 @@
 					<ExtendedConfigurationObject>4d50d363-128e-4a9e-874f-dcd55a5764b3</ExtendedConfigurationObject>
 					<Type>
 						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="1306cfd8-8d54-4b40-b720-98839fa3e509">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Заказ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>294f1bc8-ab72-47b2-ab6b-23004cf40406</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОжидаемаяОтгрузкаИлиПоступление</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="724676ef-3c50-471f-b802-2a0b99220cd2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаСобытия</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6f8a11b2-8bda-4fd8-8728-ed5d380f935a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 				</Properties>
 			</Dimension>

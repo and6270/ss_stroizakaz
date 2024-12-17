@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DefinedType uuid="d20d9b25-c708-45b2-8dca-8c53e526062b">
+		<InternalInfo>
+			<xr:GeneratedType name="DefinedType.ОжидаемаяОтгрузкаИлиПоступление" category="DefinedType">
+				<xr:TypeId>9bd9c521-2ad2-4ea5-93df-81dcdc79ebba</xr:TypeId>
+				<xr:ValueId>df79764e-7a12-45f4-8dc7-0e2b5e75d7e9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОжидаемаяОтгрузкаИлиПоступление</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c26e6260-3336-4e0e-9961-2614135dc215</ExtendedConfigurationObject>
+			<Type/>
+		</Properties>
+	</DefinedType>
+</MetaDataObject>

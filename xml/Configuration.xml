@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>24.12.11</Version>
+			<Version>24.12.13</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -151,6 +151,7 @@
 			<DefinedType>ОбъектРасчетов</DefinedType>
 			<DefinedType>РаспоряжениеНаОтгрузку</DefinedType>
 			<DefinedType>ФизическоеЛицо</DefinedType>
+			<DefinedType>ОжидаемаяОтгрузкаИлиПоступление</DefinedType>
 			<CommonCommand>Расш6270_СоздатьУстановкуЦенНоменклатуры</CommonCommand>
 			<Constant>Расш6270_КодДоступаСайта</Constant>
 			<Constant>Расш6270_Доступ</Constant>
