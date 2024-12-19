@@ -28,6 +28,9 @@
 			<Name>ЗаказКлиента</Name>
 			<Comment/>
 			<ExtendedConfigurationObject>1ceef4a2-6b58-45a0-8a75-bb6e3004590f</ExtendedConfigurationObject>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Fixed</NumberAllowedLength>
 			<RegisterRecords/>
 		</Properties>
 		<ChildObjects>
@@ -64,6 +67,288 @@
 					<ExtendedConfigurationObject>21767e3f-5e9d-43d3-803c-eaf6279e10db</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2f4a74ef-2b2c-4c11-b41b-7146a887b1dc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9b03f67d-2b7d-4c73-a988-943a154dbef7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4e858175-ac9f-43ff-9ccc-1cb0fb7aefa5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаОтгрузки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d462888a-fa46-4e10-842a-8647c5c2ab42</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9c2f550c-1953-420a-88cb-6f09d7c3329d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НомерПоДаннымКлиента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>872dcece-786c-416e-bfa4-4ce98df56dd6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2e09349a-0cfa-4f85-bc36-5c898c5a0dc1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Приоритет</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7fc5a158-e594-46e8-9ce7-851071b84ff6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Приоритеты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f7da6dda-83ea-4e11-b548-9a4bd6227189">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ХозяйственнаяОперация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2261fcc3-938d-4df2-a64b-de5601c36355</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ХозяйственныеОперации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="764b8ef3-3674-4d01-9c90-79bd8cc0702f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаПоДаннымКлиента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1c757d5d-0c97-4216-8b3f-90737b1b485f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="460d2d43-45bf-4fd4-be29-566d0f90fe79">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Договор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>75bf369d-e0ba-4ded-a392-7292f757e439</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ДоговорыКонтрагентов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="df1bca41-9d9f-42f3-9b91-43c27647e299">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Партнер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b6951ae3-bd6b-4547-a0ed-f8cb252badb3</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="8c2cf43d-9b57-403b-bf2d-e19cf795a85f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Контрагент</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3d68151c-a9dd-450f-8139-3be6ac926f58</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Контрагенты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e39be016-377b-4820-9a01-f9a22f318ad5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c683aebd-f890-44bb-bbe3-b67f7e95b55b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="18ca737b-21d3-4a27-9f3e-c38c13da2c60">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ГрафикОплаты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e925be7d-2573-499a-98d3-d4083edd7cb4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ГрафикиОплаты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="25624c36-e257-4720-909a-fd6dab868323">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Соглашение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3c728d38-3039-41f6-b288-2b92f32630c3</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СоглашенияСКлиентами</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ddef7f6c-ab70-45d7-a410-366aef1b76c8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сделка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c52d49cc-c442-472e-9894-2b37fc9463d8</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СделкиСКлиентами</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="eb04a12d-76d9-4a01-bff1-ba746b7137a6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Валюта</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0a1a3da1-943d-49ab-9c34-a8ed2e386612</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d13f2fcc-d687-44b7-b930-804aa7c44c08">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаВозвратнойТары</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>435746b1-202f-40da-adae-b8569d4b81e8</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="edac4d24-f19f-47e2-b031-80c07155e88a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Статус</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a8d06692-73f7-469f-a6a7-388a13d421d2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыЗаказовКлиентов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="520a3ab0-1ec1-4cb0-94bf-9c03795f17a8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДополнительнаяИнформация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>eda7bac8-5afa-44f2-b11b-30c3140ba4d4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bb672d34-59e4-43e4-9bd3-2e1e0a7446c1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаАвансаДоОбеспечения</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4ff8b2cf-1c36-4154-b5e4-fbc8a3ba5ea5</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e59aab94-5a83-4b75-928d-d1ce48d0a0f7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаПредоплатыДоОтгрузки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1a14d675-c2a2-4a16-978c-9044aa42660a</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e99f43dd-2075-4fe8-b649-95dad8de5709">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПорядокРасчетов</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1f0d78ee-ace3-43ba-b9b8-212d9310259d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПорядокРасчетов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d2769a33-2a98-4b90-8660-ae401c2bc73d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЭтоЗаказКакСчет</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e847dfe6-726c-48aa-883a-89617887056e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="75b2d314-d5a8-4bf4-873d-87194aa282b6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Автор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e1db6dac-b3bd-439d-b32b-faf174bb385a</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
 					</Type>
 				</Properties>
 			</Attribute>

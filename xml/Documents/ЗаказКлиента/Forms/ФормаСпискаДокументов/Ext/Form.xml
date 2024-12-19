@@ -11,12 +11,28 @@
 	<CommandSet>
 		<ExcludedCommand>Abort</ExcludedCommand>
 		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CancelSearch</ExcludedCommand>
+		<ExcludedCommand>Change</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+		<ExcludedCommand>Find</ExcludedCommand>
 		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>ListSettings</ExcludedCommand>
+		<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 		<ExcludedCommand>No</ExcludedCommand>
 		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OutputList</ExcludedCommand>
+		<ExcludedCommand>Post</ExcludedCommand>
+		<ExcludedCommand>Refresh</ExcludedCommand>
 		<ExcludedCommand>RestoreValues</ExcludedCommand>
 		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
 		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>SetDateInterval</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>UndoPosting</ExcludedCommand>
 		<ExcludedCommand>Yes</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -136,6 +152,8 @@
 			<DefaultItem>true</DefaultItem>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -304,26 +322,31 @@
 									<Button name="СписокОтгрузитьЗаказ" id="309">
 										<Type>CommandBarButton</Type>
 										<CommandName>0</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокОтгрузитьЗаказРасширеннаяПодсказка" id="311"/>
 									</Button>
 									<Button name="СписокРезервироватьЗаказ" id="310">
 										<Type>CommandBarButton</Type>
 										<CommandName>0</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокРезервироватьЗаказРасширеннаяПодсказка" id="313"/>
 									</Button>
 									<Button name="СписокРезервироватьПоМереПоступленияЗаказ" id="318">
 										<Type>CommandBarButton</Type>
 										<CommandName>0</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокРезервироватьПоМереПоступленияЗаказРасширеннаяПодсказка" id="319"/>
 									</Button>
 									<Button name="СписокКОбеспечениюЗаказ" id="312">
 										<Type>CommandBarButton</Type>
 										<CommandName>0</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокКОбеспечениюЗаказРасширеннаяПодсказка" id="299"/>
 									</Button>
 									<Button name="СписокНеОбеспечиватьЗаказ" id="300">
 										<Type>CommandBarButton</Type>
 										<CommandName>0</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокНеОбеспечиватьЗаказРасширеннаяПодсказка" id="301"/>
 									</Button>
 								</ChildItems>
@@ -340,6 +363,7 @@
 									<Button name="СписокСостояниеОбеспеченияСпискаЗаказов" id="251">
 										<Type>CommandBarButton</Type>
 										<CommandName>0</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокСостояниеОбеспеченияСпискаЗаказовРасширеннаяПодсказка" id="252"/>
 									</Button>
 								</ChildItems>
@@ -362,6 +386,7 @@
 									<Button name="СписокОбработкаПомощникЗачетаОплатЗачетОплаты" id="316">
 										<Type>CommandBarButton</Type>
 										<CommandName>0</CommandName>
+										<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 										<ExtendedTooltip name="СписокОбработкаПомощникЗачетаОплатЗачетОплатыРасширеннаяПодсказка" id="317"/>
 									</Button>
 								</ChildItems>
@@ -506,36 +531,66 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="239"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<PictureField name="СписокПриоритет" id="45">
+				<ColumnGroup name="ГруппаКартинки" id="327">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приоритет</v8:content>
+							<v8:content>Группа картинки</v8:content>
 						</v8:item>
 					</Title>
-					<TitleLocation>None</TitleLocation>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приоритет заказа</v8:content>
+							<v8:content>Группа картинки</v8:content>
 						</v8:item>
 					</ToolTip>
-					<Width>1</Width>
-					<Height>1</Height>
-					<HorizontalStretch>false</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<ValuesPicture>
-						<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
-						<xr:LoadTransparent>false</xr:LoadTransparent>
-					</ValuesPicture>
-					<Border width="1">
-						<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
-					</Border>
-					<FileDragMode>AsFile</FileDragMode>
-					<ContextMenu name="СписокПриоритетКонтекстноеМеню" id="46"/>
-					<ExtendedTooltip name="СписокПриоритетРасширеннаяПодсказка" id="190"/>
-				</PictureField>
+					<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="328"/>
+					<ChildItems>
+						<PictureField name="Битрикс" id="324">
+							<DataPath>Список.Битрикс</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ShowInHeader>false</ShowInHeader>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.Расш6270_Битрикс</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="БитриксКонтекстноеМеню" id="325"/>
+							<ExtendedTooltip name="БитриксРасширеннаяПодсказка" id="326"/>
+						</PictureField>
+						<PictureField name="СписокПриоритет" id="45">
+							<DataPath>Список.КартинкаПриоритета</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приоритет</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приоритет заказа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>1</Width>
+							<Height>1</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.Приоритеты</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокПриоритетКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="СписокПриоритетРасширеннаяПодсказка" id="190"/>
+						</PictureField>
+					</ChildItems>
+				</ColumnGroup>
 				<InputField name="СписокНомер" id="6">
+					<DataPath>Список.Номер</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -549,6 +604,7 @@
 					<ExtendedTooltip name="СписокНомерРасширеннаяПодсказка" id="191"/>
 				</InputField>
 				<InputField name="СписокДата" id="271">
+					<DataPath>Список.Дата</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Title>
 						<v8:item>
@@ -562,6 +618,7 @@
 					<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="273"/>
 				</InputField>
 				<LabelField name="НомерПоДаннымКлиента" id="155">
+					<DataPath>Список.НомерПоДаннымКлиента</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -570,6 +627,7 @@
 					<ExtendedTooltip name="НомерПоДаннымКлиентаРасширеннаяПодсказка" id="193"/>
 				</LabelField>
 				<LabelField name="ДатаПоДаннымКлиента" id="157">
+					<DataPath>Список.ДатаПоДаннымКлиента</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -578,6 +636,7 @@
 					<ExtendedTooltip name="ДатаПоДаннымКлиентаРасширеннаяПодсказка" id="194"/>
 				</LabelField>
 				<InputField name="СписокСуммаДокумента" id="24">
+					<DataPath>Список.СуммаДокумента</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -597,6 +656,7 @@
 					<ExtendedTooltip name="СписокСуммаДокументаРасширеннаяПодсказка" id="197"/>
 				</InputField>
 				<LabelField name="СуммаВозвратнойТары" id="163">
+					<DataPath>Список.СуммаВозвратнойТары</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -604,6 +664,7 @@
 					<ExtendedTooltip name="СуммаВозвратнойТарыРасширеннаяПодсказка" id="198"/>
 				</LabelField>
 				<InputField name="СписокПартнер" id="8">
+					<DataPath>Список.Партнер</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -616,6 +677,7 @@
 					<ExtendedTooltip name="СписокПартнерРасширеннаяПодсказка" id="213"/>
 				</InputField>
 				<InputField name="СписокСостояние" id="32">
+					<DataPath>Список.Состояние</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -628,6 +690,7 @@
 					<ExtendedTooltip name="СписокСостояниеРасширеннаяПодсказка" id="195"/>
 				</InputField>
 				<LabelField name="СписокДатаСобытия" id="226">
+					<DataPath>Список.ДатаСобытия</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -638,6 +701,7 @@
 					<ExtendedTooltip name="СписокДатаСобытияРасширеннаяПодсказка" id="228"/>
 				</LabelField>
 				<LabelField name="СписокСтатус" id="103">
+					<DataPath>Список.Статус</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -647,6 +711,7 @@
 					<ExtendedTooltip name="СписокСтатусРасширеннаяПодсказка" id="196"/>
 				</LabelField>
 				<LabelField name="ПредставлениеСостояния" id="146">
+					<DataPath>Список.ПредставлениеСостояния</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -657,6 +722,7 @@
 					<ExtendedTooltip name="ПредставлениеСостоянияРасширеннаяПодсказка" id="199"/>
 				</LabelField>
 				<LabelField name="СписокСуммаАвансаДоОбеспечения" id="83">
+					<DataPath>Список.СуммаАвансаДоОбеспечения</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -672,6 +738,7 @@
 					<ExtendedTooltip name="СписокСуммаАвансаДоОбеспеченияРасширеннаяПодсказка" id="200"/>
 				</LabelField>
 				<LabelField name="СписокСуммаПредоплатыДоОтгрузки" id="85">
+					<DataPath>Список.СуммаПредоплатыДоОтгрузки</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -687,6 +754,7 @@
 					<ExtendedTooltip name="СписокСуммаПредоплатыДоОтгрузкиРасширеннаяПодсказка" id="201"/>
 				</LabelField>
 				<LabelField name="СписокСуммаОплаты" id="107">
+					<DataPath>Список.СуммаОплаты</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -708,6 +776,7 @@
 					<ExtendedTooltip name="СписокСуммаОплатыРасширеннаяПодсказка" id="202"/>
 				</LabelField>
 				<LabelField name="СписокПроцентОплаты" id="113">
+					<DataPath>Список.ПроцентОплаты</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -720,6 +789,7 @@
 					<ExtendedTooltip name="СписокПроцентОплатыРасширеннаяПодсказка" id="203"/>
 				</LabelField>
 				<LabelField name="СписокСуммаОтгрузки" id="109">
+					<DataPath>Список.СуммаОтгрузки</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -751,6 +821,7 @@
 					<ExtendedTooltip name="ГруппаОтгрузкаРасширеннаяПодсказка" id="246"/>
 					<ChildItems>
 						<LabelField name="СписокПроцентОтгрузки" id="115">
+							<DataPath>Список.ПроцентОтгрузки</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -763,6 +834,7 @@
 							<ExtendedTooltip name="СписокПроцентОтгрузкиРасширеннаяПодсказка" id="205"/>
 						</LabelField>
 						<PictureField name="ЕстьРасхожденияОрдерНакладная" id="242">
+							<DataPath>Список.ЕстьРасхожденияОрдерНакладная</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -781,6 +853,7 @@
 					</ChildItems>
 				</ColumnGroup>
 				<LabelField name="СписокНашДолг" id="117">
+					<DataPath>Список.НашДолг</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -802,6 +875,7 @@
 					<ExtendedTooltip name="СписокНашДолгРасширеннаяПодсказка" id="207"/>
 				</LabelField>
 				<LabelField name="СписокДолгКлиента" id="119">
+					<DataPath>Список.ДолгКлиента</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -823,6 +897,7 @@
 					<ExtendedTooltip name="СписокДолгКлиентаРасширеннаяПодсказка" id="208"/>
 				</LabelField>
 				<LabelField name="СписокПроцентДолга" id="144">
+					<DataPath>Список.ПроцентДолга</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -835,6 +910,7 @@
 					<ExtendedTooltip name="СписокПроцентДолгаРасширеннаяПодсказка" id="209"/>
 				</LabelField>
 				<LabelField name="СписокДатаОтгрузки" id="159">
+					<DataPath>Список.ДатаОтгрузки</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -848,6 +924,7 @@
 					<ExtendedTooltip name="СписокДатаОтгрузкиРасширеннаяПодсказка" id="210"/>
 				</LabelField>
 				<InputField name="СписокВалюта" id="16">
+					<DataPath>Список.Валюта</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -861,17 +938,20 @@
 					<ExtendedTooltip name="СписокВалютаРасширеннаяПодсказка" id="211"/>
 				</InputField>
 				<LabelField name="СписокХозяйственнаяОперация" id="132">
+					<DataPath>Список.ХозяйственнаяОперация</DataPath>
 					<Width>16</Width>
 					<ContextMenu name="СписокХозяйственнаяОперацияКонтекстноеМеню" id="133"/>
 					<ExtendedTooltip name="СписокХозяйственнаяОперацияРасширеннаяПодсказка" id="212"/>
 				</LabelField>
 				<InputField name="СписокСделка" id="49">
+					<DataPath>Список.Сделка</DataPath>
 					<Width>16</Width>
 					<Wrap>false</Wrap>
 					<ContextMenu name="СписокСделкаКонтекстноеМеню" id="50"/>
 					<ExtendedTooltip name="СписокСделкаРасширеннаяПодсказка" id="214"/>
 				</InputField>
 				<InputField name="СписокКонтрагент" id="12">
+					<DataPath>Список.Контрагент</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -887,6 +967,7 @@
 					<ExtendedTooltip name="СписокКонтрагентРасширеннаяПодсказка" id="215"/>
 				</InputField>
 				<InputField name="СписокОрганизация" id="14">
+					<DataPath>Список.Организация</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -902,6 +983,7 @@
 					<ExtendedTooltip name="СписокОрганизацияРасширеннаяПодсказка" id="216"/>
 				</InputField>
 				<InputField name="СписокГрафикОплаты" id="28">
+					<DataPath>Список.ГрафикОплаты</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -911,6 +993,7 @@
 					<ExtendedTooltip name="СписокГрафикОплатыРасширеннаяПодсказка" id="217"/>
 				</InputField>
 				<InputField name="СписокСклад" id="30">
+					<DataPath>Список.Склад</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -920,6 +1003,7 @@
 					<ExtendedTooltip name="СписокСкладРасширеннаяПодсказка" id="218"/>
 				</InputField>
 				<LabelField name="СписокСоглашение" id="150">
+					<DataPath>Список.Соглашение</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -928,6 +1012,7 @@
 					<ExtendedTooltip name="СписокСоглашениеРасширеннаяПодсказка" id="219"/>
 				</LabelField>
 				<LabelField name="СписокДоговор" id="152">
+					<DataPath>Список.Договор</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -936,6 +1021,7 @@
 					<ExtendedTooltip name="СписокДоговорРасширеннаяПодсказка" id="220"/>
 				</LabelField>
 				<LabelField name="СписокМенеджер" id="148">
+					<DataPath>Список.Менеджер</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -944,10 +1030,12 @@
 					<ExtendedTooltip name="СписокМенеджерРасширеннаяПодсказка" id="221"/>
 				</LabelField>
 				<InputField name="СписокАвтор" id="292">
+					<DataPath>Список.Автор</DataPath>
 					<ContextMenu name="СписокАвторКонтекстноеМеню" id="293"/>
 					<ExtendedTooltip name="СписокАвторРасширеннаяПодсказка" id="294"/>
 				</InputField>
 				<LabelField name="СписокКомментарий" id="139">
+					<DataPath>Список.Комментарий</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -955,6 +1043,7 @@
 					<ExtendedTooltip name="СписокКомментарийРасширеннаяПодсказка" id="222"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="142">
+					<DataPath>Список.Ссылка</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
@@ -1002,7 +1091,136 @@
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
-	<Attributes/>
+	<Attributes>
+		<Attribute name="Список" id="1000001">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Список.Ссылка</Field>
+				<Field>Список.Статус</Field>
+				<Field>Список.ЭтоЗаказКакСчет</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ВЫБОР
+		КОГДА Расш6270_Состояние.Состояние ЕСТЬ NULL
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК Битрикс,
+	ДокументЗаказКлиента.Ссылка КАК Ссылка,
+	ДокументЗаказКлиента.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументЗаказКлиента.Номер КАК Номер,
+	ДокументЗаказКлиента.Дата КАК Дата,
+	ДокументЗаказКлиента.НомерПоДаннымКлиента КАК НомерПоДаннымКлиента,
+	ДокументЗаказКлиента.ДатаПоДаннымКлиента КАК ДатаПоДаннымКлиента,
+	ДокументЗаказКлиента.Проведен КАК Проведен,
+	ДокументЗаказКлиента.Приоритет КАК Приоритет,
+	ДокументЗаказКлиента.Партнер КАК Партнер,
+	ДокументЗаказКлиента.Контрагент КАК Контрагент,
+	ДокументЗаказКлиента.Организация КАК Организация,
+	ДокументЗаказКлиента.Соглашение КАК Соглашение,
+	ДокументЗаказКлиента.Договор КАК Договор,
+	ДокументЗаказКлиента.Сделка КАК Сделка,
+	ДокументЗаказКлиента.Валюта КАК Валюта,
+	ДокументЗаказКлиента.СуммаДокумента КАК СуммаДокумента,
+	ДокументЗаказКлиента.СуммаВозвратнойТары КАК СуммаВозвратнойТары,
+	ДокументЗаказКлиента.ГрафикОплаты КАК ГрафикОплаты,
+	ДокументЗаказКлиента.Склад КАК Склад,
+	ДокументЗаказКлиента.Статус КАК Статус,
+	ДокументЗаказКлиента.Менеджер КАК Менеджер,
+	ДокументЗаказКлиента.ДополнительнаяИнформация КАК ДополнительнаяИнформация,
+	ДокументЗаказКлиента.СуммаАвансаДоОбеспечения КАК СуммаАвансаДоОбеспечения,
+	ДокументЗаказКлиента.СуммаПредоплатыДоОтгрузки КАК СуммаПредоплатыДоОтгрузки,
+	ДокументЗаказКлиента.ДатаОтгрузки КАК ДатаОтгрузки,
+	ДокументЗаказКлиента.ХозяйственнаяОперация КАК ХозяйственнаяОперация,
+	ДокументЗаказКлиента.ПорядокРасчетов КАК ПорядокРасчетов,
+	ДокументЗаказКлиента.Комментарий КАК Комментарий,
+	ВЫБОР
+		КОГДА НЕ ДокументЗаказКлиента.Проведен
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.СостоянияЗаказовКлиентов.ПустаяСсылка)
+		ИНАЧЕ ЕСТЬNULL(СостоянияЗаказовКлиентов.Состояние, ЗНАЧЕНИЕ(Перечисление.СостоянияЗаказовКлиентов.Закрыт))
+	КОНЕЦ КАК Состояние,
+	ВЫБОР
+		КОГДА НЕ ДокументЗаказКлиента.Проведен
+			ТОГДА ЛОЖЬ
+		КОГДА СостоянияЗаказовКлиентов.ДатаСобытия &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+				И &amp;ДатаАктуальности &gt; СостоянияЗаказовКлиентов.ДатаСобытия
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Просрочен,
+	ВЫБОР
+		КОГДА ДокументЗаказКлиента.Приоритет В
+				(ВЫБРАТЬ ПЕРВЫЕ 1
+					Приоритеты.Ссылка КАК Приоритет
+				ИЗ
+					Справочник.Приоритеты КАК Приоритеты
+				УПОРЯДОЧИТЬ ПО
+					Приоритеты.РеквизитДопУпорядочивания)
+			ТОГДА 0
+		КОГДА ДокументЗаказКлиента.Приоритет В
+				(ВЫБРАТЬ ПЕРВЫЕ 1
+					Приоритеты.Ссылка КАК Приоритет
+				ИЗ
+					Справочник.Приоритеты КАК Приоритеты
+				УПОРЯДОЧИТЬ ПО
+					Приоритеты.РеквизитДопУпорядочивания УБЫВ)
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ КАК КартинкаПриоритета,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаОплаты, 0) КАК СуммаОплаты,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ПроцентОплаты, 0) КАК ПроцентОплаты,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаОтгрузки, 0) КАК СуммаОтгрузки,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ПроцентОтгрузки, 0) КАК ПроцентОтгрузки,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0) &lt; 0
+			ТОГДА -ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0)
+		ИНАЧЕ 0
+	КОНЕЦ КАК НашДолг,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0) &gt; 0
+			ТОГДА ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0)
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДолгКлиента,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ПроцентДолга, 0) КАК ПроцентДолга,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ДатаСобытия, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаСобытия,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ЕстьРасхожденияОрдерНакладная, ЛОЖЬ) КАК ЕстьРасхожденияОрдерНакладная,
+	СостоянияЭД.СостояниеЭДО КАК СостояниеЭДО,
+	СостоянияЭД.ПредставлениеСостояния КАК ПредставлениеСостояния,
+	ДокументЗаказКлиента.Автор КАК Автор,
+	ДокументЗаказКлиента.ЭтоЗаказКакСчет КАК ЭтоЗаказКакСчет,
+	&amp;ДополнительныеПоляСостояниеEDI КАК ДополнительныеПоляСостояниеEDI
+ИЗ
+	Документ.ЗаказКлиента КАК ДокументЗаказКлиента
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЗаказовКлиентов КАК СостоянияЗаказовКлиентов
+		ПО (СостоянияЗаказовКлиентов.Заказ = ДокументЗаказКлиента.Ссылка)
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияПоОбъектамУчетаЭДО КАК СостоянияЭД
+		ПО (СостоянияЭД.СсылкаНаОбъект = ДокументЗаказКлиента.Ссылка)}
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.Расш6270_Состояние КАК Расш6270_Состояние
+		ПО ДокументЗаказКлиента.Ссылка = Расш6270_Состояние.Объект</QueryText>
+				<MainTable>Document.ЗаказКлиента</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
 	<BaseForm version="2.18">
 		<Title>
 			<v8:item>
@@ -1015,12 +1233,28 @@
 		<CommandSet>
 			<ExcludedCommand>Abort</ExcludedCommand>
 			<ExcludedCommand>Cancel</ExcludedCommand>
+			<ExcludedCommand>CancelSearch</ExcludedCommand>
+			<ExcludedCommand>Change</ExcludedCommand>
+			<ExcludedCommand>Copy</ExcludedCommand>
+			<ExcludedCommand>Create</ExcludedCommand>
+			<ExcludedCommand>Delete</ExcludedCommand>
+			<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+			<ExcludedCommand>Find</ExcludedCommand>
 			<ExcludedCommand>Ignore</ExcludedCommand>
+			<ExcludedCommand>ListSettings</ExcludedCommand>
+			<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 			<ExcludedCommand>No</ExcludedCommand>
 			<ExcludedCommand>OK</ExcludedCommand>
+			<ExcludedCommand>OutputList</ExcludedCommand>
+			<ExcludedCommand>Post</ExcludedCommand>
+			<ExcludedCommand>Refresh</ExcludedCommand>
 			<ExcludedCommand>RestoreValues</ExcludedCommand>
 			<ExcludedCommand>Retry</ExcludedCommand>
+			<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
 			<ExcludedCommand>SaveValues</ExcludedCommand>
+			<ExcludedCommand>SetDateInterval</ExcludedCommand>
+			<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+			<ExcludedCommand>UndoPosting</ExcludedCommand>
 			<ExcludedCommand>Yes</ExcludedCommand>
 		</CommandSet>
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -1137,6 +1371,8 @@
 				<DefaultItem>true</DefaultItem>
 				<UseAlternationRowColor>true</UseAlternationRowColor>
 				<FileDragMode>AsFile</FileDragMode>
+				<DataPath>Список</DataPath>
+				<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -1305,26 +1541,31 @@
 										<Button name="СписокОтгрузитьЗаказ" id="309">
 											<Type>CommandBarButton</Type>
 											<CommandName>0</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="СписокОтгрузитьЗаказРасширеннаяПодсказка" id="311"/>
 										</Button>
 										<Button name="СписокРезервироватьЗаказ" id="310">
 											<Type>CommandBarButton</Type>
 											<CommandName>0</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="СписокРезервироватьЗаказРасширеннаяПодсказка" id="313"/>
 										</Button>
 										<Button name="СписокРезервироватьПоМереПоступленияЗаказ" id="318">
 											<Type>CommandBarButton</Type>
 											<CommandName>0</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="СписокРезервироватьПоМереПоступленияЗаказРасширеннаяПодсказка" id="319"/>
 										</Button>
 										<Button name="СписокКОбеспечениюЗаказ" id="312">
 											<Type>CommandBarButton</Type>
 											<CommandName>0</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="СписокКОбеспечениюЗаказРасширеннаяПодсказка" id="299"/>
 										</Button>
 										<Button name="СписокНеОбеспечиватьЗаказ" id="300">
 											<Type>CommandBarButton</Type>
 											<CommandName>0</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="СписокНеОбеспечиватьЗаказРасширеннаяПодсказка" id="301"/>
 										</Button>
 									</ChildItems>
@@ -1341,6 +1582,7 @@
 										<Button name="СписокСостояниеОбеспеченияСпискаЗаказов" id="251">
 											<Type>CommandBarButton</Type>
 											<CommandName>0</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="СписокСостояниеОбеспеченияСпискаЗаказовРасширеннаяПодсказка" id="252"/>
 										</Button>
 									</ChildItems>
@@ -1363,6 +1605,7 @@
 										<Button name="СписокОбработкаПомощникЗачетаОплатЗачетОплаты" id="316">
 											<Type>CommandBarButton</Type>
 											<CommandName>0</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<ExtendedTooltip name="СписокОбработкаПомощникЗачетаОплатЗачетОплатыРасширеннаяПодсказка" id="317"/>
 										</Button>
 									</ChildItems>
@@ -1508,6 +1751,7 @@
 				</SearchControlAddition>
 				<ChildItems>
 					<PictureField name="СписокПриоритет" id="45">
+						<DataPath>Список.КартинкаПриоритета</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1537,6 +1781,7 @@
 						<ExtendedTooltip name="СписокПриоритетРасширеннаяПодсказка" id="190"/>
 					</PictureField>
 					<InputField name="СписокНомер" id="6">
+						<DataPath>Список.Номер</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1550,6 +1795,7 @@
 						<ExtendedTooltip name="СписокНомерРасширеннаяПодсказка" id="191"/>
 					</InputField>
 					<InputField name="СписокДата" id="271">
+						<DataPath>Список.Дата</DataPath>
 						<DefaultItem>true</DefaultItem>
 						<Title>
 							<v8:item>
@@ -1563,6 +1809,7 @@
 						<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="273"/>
 					</InputField>
 					<LabelField name="НомерПоДаннымКлиента" id="155">
+						<DataPath>Список.НомерПоДаннымКлиента</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1571,6 +1818,7 @@
 						<ExtendedTooltip name="НомерПоДаннымКлиентаРасширеннаяПодсказка" id="193"/>
 					</LabelField>
 					<LabelField name="ДатаПоДаннымКлиента" id="157">
+						<DataPath>Список.ДатаПоДаннымКлиента</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1579,6 +1827,7 @@
 						<ExtendedTooltip name="ДатаПоДаннымКлиентаРасширеннаяПодсказка" id="194"/>
 					</LabelField>
 					<InputField name="СписокСуммаДокумента" id="24">
+						<DataPath>Список.СуммаДокумента</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1598,6 +1847,7 @@
 						<ExtendedTooltip name="СписокСуммаДокументаРасширеннаяПодсказка" id="197"/>
 					</InputField>
 					<LabelField name="СуммаВозвратнойТары" id="163">
+						<DataPath>Список.СуммаВозвратнойТары</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1605,6 +1855,7 @@
 						<ExtendedTooltip name="СуммаВозвратнойТарыРасширеннаяПодсказка" id="198"/>
 					</LabelField>
 					<InputField name="СписокПартнер" id="8">
+						<DataPath>Список.Партнер</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1617,6 +1868,7 @@
 						<ExtendedTooltip name="СписокПартнерРасширеннаяПодсказка" id="213"/>
 					</InputField>
 					<InputField name="СписокСостояние" id="32">
+						<DataPath>Список.Состояние</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1629,6 +1881,7 @@
 						<ExtendedTooltip name="СписокСостояниеРасширеннаяПодсказка" id="195"/>
 					</InputField>
 					<LabelField name="СписокДатаСобытия" id="226">
+						<DataPath>Список.ДатаСобытия</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1639,6 +1892,7 @@
 						<ExtendedTooltip name="СписокДатаСобытияРасширеннаяПодсказка" id="228"/>
 					</LabelField>
 					<LabelField name="СписокСтатус" id="103">
+						<DataPath>Список.Статус</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1648,6 +1902,7 @@
 						<ExtendedTooltip name="СписокСтатусРасширеннаяПодсказка" id="196"/>
 					</LabelField>
 					<LabelField name="ПредставлениеСостояния" id="146">
+						<DataPath>Список.ПредставлениеСостояния</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1658,6 +1913,7 @@
 						<ExtendedTooltip name="ПредставлениеСостоянияРасширеннаяПодсказка" id="199"/>
 					</LabelField>
 					<LabelField name="СписокСуммаАвансаДоОбеспечения" id="83">
+						<DataPath>Список.СуммаАвансаДоОбеспечения</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1673,6 +1929,7 @@
 						<ExtendedTooltip name="СписокСуммаАвансаДоОбеспеченияРасширеннаяПодсказка" id="200"/>
 					</LabelField>
 					<LabelField name="СписокСуммаПредоплатыДоОтгрузки" id="85">
+						<DataPath>Список.СуммаПредоплатыДоОтгрузки</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1688,6 +1945,7 @@
 						<ExtendedTooltip name="СписокСуммаПредоплатыДоОтгрузкиРасширеннаяПодсказка" id="201"/>
 					</LabelField>
 					<LabelField name="СписокСуммаОплаты" id="107">
+						<DataPath>Список.СуммаОплаты</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1709,6 +1967,7 @@
 						<ExtendedTooltip name="СписокСуммаОплатыРасширеннаяПодсказка" id="202"/>
 					</LabelField>
 					<LabelField name="СписокПроцентОплаты" id="113">
+						<DataPath>Список.ПроцентОплаты</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1721,6 +1980,7 @@
 						<ExtendedTooltip name="СписокПроцентОплатыРасширеннаяПодсказка" id="203"/>
 					</LabelField>
 					<LabelField name="СписокСуммаОтгрузки" id="109">
+						<DataPath>Список.СуммаОтгрузки</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1752,6 +2012,7 @@
 						<ExtendedTooltip name="ГруппаОтгрузкаРасширеннаяПодсказка" id="246"/>
 						<ChildItems>
 							<LabelField name="СписокПроцентОтгрузки" id="115">
+								<DataPath>Список.ПроцентОтгрузки</DataPath>
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
@@ -1764,6 +2025,7 @@
 								<ExtendedTooltip name="СписокПроцентОтгрузкиРасширеннаяПодсказка" id="205"/>
 							</LabelField>
 							<PictureField name="ЕстьРасхожденияОрдерНакладная" id="242">
+								<DataPath>Список.ЕстьРасхожденияОрдерНакладная</DataPath>
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
@@ -1782,6 +2044,7 @@
 						</ChildItems>
 					</ColumnGroup>
 					<LabelField name="СписокНашДолг" id="117">
+						<DataPath>Список.НашДолг</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1803,6 +2066,7 @@
 						<ExtendedTooltip name="СписокНашДолгРасширеннаяПодсказка" id="207"/>
 					</LabelField>
 					<LabelField name="СписокДолгКлиента" id="119">
+						<DataPath>Список.ДолгКлиента</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1824,6 +2088,7 @@
 						<ExtendedTooltip name="СписокДолгКлиентаРасширеннаяПодсказка" id="208"/>
 					</LabelField>
 					<LabelField name="СписокПроцентДолга" id="144">
+						<DataPath>Список.ПроцентДолга</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1836,6 +2101,7 @@
 						<ExtendedTooltip name="СписокПроцентДолгаРасширеннаяПодсказка" id="209"/>
 					</LabelField>
 					<LabelField name="СписокДатаОтгрузки" id="159">
+						<DataPath>Список.ДатаОтгрузки</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1849,6 +2115,7 @@
 						<ExtendedTooltip name="СписокДатаОтгрузкиРасширеннаяПодсказка" id="210"/>
 					</LabelField>
 					<InputField name="СписокВалюта" id="16">
+						<DataPath>Список.Валюта</DataPath>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
@@ -1862,17 +2129,20 @@
 						<ExtendedTooltip name="СписокВалютаРасширеннаяПодсказка" id="211"/>
 					</InputField>
 					<LabelField name="СписокХозяйственнаяОперация" id="132">
+						<DataPath>Список.ХозяйственнаяОперация</DataPath>
 						<Width>16</Width>
 						<ContextMenu name="СписокХозяйственнаяОперацияКонтекстноеМеню" id="133"/>
 						<ExtendedTooltip name="СписокХозяйственнаяОперацияРасширеннаяПодсказка" id="212"/>
 					</LabelField>
 					<InputField name="СписокСделка" id="49">
+						<DataPath>Список.Сделка</DataPath>
 						<Width>16</Width>
 						<Wrap>false</Wrap>
 						<ContextMenu name="СписокСделкаКонтекстноеМеню" id="50"/>
 						<ExtendedTooltip name="СписокСделкаРасширеннаяПодсказка" id="214"/>
 					</InputField>
 					<InputField name="СписокКонтрагент" id="12">
+						<DataPath>Список.Контрагент</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1888,6 +2158,7 @@
 						<ExtendedTooltip name="СписокКонтрагентРасширеннаяПодсказка" id="215"/>
 					</InputField>
 					<InputField name="СписокОрганизация" id="14">
+						<DataPath>Список.Организация</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1903,6 +2174,7 @@
 						<ExtendedTooltip name="СписокОрганизацияРасширеннаяПодсказка" id="216"/>
 					</InputField>
 					<InputField name="СписокГрафикОплаты" id="28">
+						<DataPath>Список.ГрафикОплаты</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1912,6 +2184,7 @@
 						<ExtendedTooltip name="СписокГрафикОплатыРасширеннаяПодсказка" id="217"/>
 					</InputField>
 					<InputField name="СписокСклад" id="30">
+						<DataPath>Список.Склад</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1921,6 +2194,7 @@
 						<ExtendedTooltip name="СписокСкладРасширеннаяПодсказка" id="218"/>
 					</InputField>
 					<LabelField name="СписокСоглашение" id="150">
+						<DataPath>Список.Соглашение</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1929,6 +2203,7 @@
 						<ExtendedTooltip name="СписокСоглашениеРасширеннаяПодсказка" id="219"/>
 					</LabelField>
 					<LabelField name="СписокДоговор" id="152">
+						<DataPath>Список.Договор</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1937,6 +2212,7 @@
 						<ExtendedTooltip name="СписокДоговорРасширеннаяПодсказка" id="220"/>
 					</LabelField>
 					<LabelField name="СписокМенеджер" id="148">
+						<DataPath>Список.Менеджер</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1945,10 +2221,12 @@
 						<ExtendedTooltip name="СписокМенеджерРасширеннаяПодсказка" id="221"/>
 					</LabelField>
 					<InputField name="СписокАвтор" id="292">
+						<DataPath>Список.Автор</DataPath>
 						<ContextMenu name="СписокАвторКонтекстноеМеню" id="293"/>
 						<ExtendedTooltip name="СписокАвторРасширеннаяПодсказка" id="294"/>
 					</InputField>
 					<LabelField name="СписокКомментарий" id="139">
+						<DataPath>Список.Комментарий</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -1956,6 +2234,7 @@
 						<ExtendedTooltip name="СписокКомментарийРасширеннаяПодсказка" id="222"/>
 					</LabelField>
 					<LabelField name="Ссылка" id="142">
+						<DataPath>Список.Ссылка</DataPath>
 						<UserVisible>
 							<xr:Common>false</xr:Common>
 						</UserVisible>
@@ -2003,6 +2282,128 @@
 				</ChildItems>
 			</UsualGroup>
 		</ChildItems>
-		<Attributes/>
+		<Attributes>
+			<Attribute name="Список" id="1000001">
+				<Type>
+					<v8:Type>cfg:DynamicList</v8:Type>
+				</Type>
+				<MainAttribute>true</MainAttribute>
+				<UseAlways>
+					<Field>Список.Ссылка</Field>
+					<Field>Список.Статус</Field>
+					<Field>Список.ЭтоЗаказКакСчет</Field>
+				</UseAlways>
+				<Settings xsi:type="DynamicList">
+					<ManualQuery>true</ManualQuery>
+					<DynamicDataRead>true</DynamicDataRead>
+					<QueryText>ВЫБРАТЬ
+	ДокументЗаказКлиента.Ссылка КАК Ссылка,
+	ДокументЗаказКлиента.ПометкаУдаления КАК ПометкаУдаления,
+	ДокументЗаказКлиента.Номер КАК Номер,
+	ДокументЗаказКлиента.Дата КАК Дата,
+	ДокументЗаказКлиента.НомерПоДаннымКлиента КАК НомерПоДаннымКлиента,
+	ДокументЗаказКлиента.ДатаПоДаннымКлиента КАК ДатаПоДаннымКлиента,
+	ДокументЗаказКлиента.Проведен КАК Проведен,
+	ДокументЗаказКлиента.Приоритет КАК Приоритет,
+	ДокументЗаказКлиента.Партнер КАК Партнер,
+	ДокументЗаказКлиента.Контрагент КАК Контрагент,
+	ДокументЗаказКлиента.Организация КАК Организация,
+	ДокументЗаказКлиента.Соглашение КАК Соглашение,
+	ДокументЗаказКлиента.Договор КАК Договор,
+	ДокументЗаказКлиента.Сделка КАК Сделка,
+	ДокументЗаказКлиента.Валюта КАК Валюта,
+	ДокументЗаказКлиента.СуммаДокумента КАК СуммаДокумента,
+	ДокументЗаказКлиента.СуммаВозвратнойТары КАК СуммаВозвратнойТары,
+	ДокументЗаказКлиента.ГрафикОплаты КАК ГрафикОплаты,
+	ДокументЗаказКлиента.Склад КАК Склад,
+	ДокументЗаказКлиента.Статус КАК Статус,
+	ДокументЗаказКлиента.Менеджер КАК Менеджер,
+	ДокументЗаказКлиента.ДополнительнаяИнформация КАК ДополнительнаяИнформация,
+	ДокументЗаказКлиента.СуммаАвансаДоОбеспечения КАК СуммаАвансаДоОбеспечения,
+	ДокументЗаказКлиента.СуммаПредоплатыДоОтгрузки КАК СуммаПредоплатыДоОтгрузки,
+	ДокументЗаказКлиента.ДатаОтгрузки КАК ДатаОтгрузки,
+	ДокументЗаказКлиента.ХозяйственнаяОперация КАК ХозяйственнаяОперация,
+	ДокументЗаказКлиента.ПорядокРасчетов КАК ПорядокРасчетов,
+	ДокументЗаказКлиента.Комментарий КАК Комментарий,
+	ВЫБОР
+		КОГДА (НЕ ДокументЗаказКлиента.Проведен)
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.СостоянияЗаказовКлиентов.ПустаяСсылка)
+		ИНАЧЕ ЕСТЬNULL(СостоянияЗаказовКлиентов.Состояние, ЗНАЧЕНИЕ(Перечисление.СостоянияЗаказовКлиентов.Закрыт))
+	КОНЕЦ КАК Состояние,
+	ВЫБОР
+		КОГДА (НЕ ДокументЗаказКлиента.Проведен)
+			ТОГДА ЛОЖЬ
+		КОГДА СостоянияЗаказовКлиентов.ДатаСобытия &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+		И &amp;ДатаАктуальности &gt; СостоянияЗаказовКлиентов.ДатаСобытия
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Просрочен,
+	ВЫБОР
+		КОГДА ДокументЗаказКлиента.Приоритет В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				Приоритеты.Ссылка КАК Приоритет
+			ИЗ
+				Справочник.Приоритеты КАК Приоритеты
+			УПОРЯДОЧИТЬ ПО
+				Приоритеты.РеквизитДопУпорядочивания)
+			ТОГДА 0
+		КОГДА ДокументЗаказКлиента.Приоритет В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				Приоритеты.Ссылка КАК Приоритет
+			ИЗ
+				Справочник.Приоритеты КАК Приоритеты
+			УПОРЯДОЧИТЬ ПО
+				Приоритеты.РеквизитДопУпорядочивания УБЫВ)
+			ТОГДА 2
+		ИНАЧЕ 1
+	КОНЕЦ КАК КартинкаПриоритета,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаОплаты, 0) КАК СуммаОплаты,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ПроцентОплаты, 0) КАК ПроцентОплаты,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаОтгрузки, 0) КАК СуммаОтгрузки,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ПроцентОтгрузки, 0) КАК ПроцентОтгрузки,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0) &lt; 0
+			ТОГДА -ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0)
+		ИНАЧЕ 0
+	КОНЕЦ КАК НашДолг,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0) &gt; 0
+			ТОГДА ЕСТЬNULL(СостоянияЗаказовКлиентов.СуммаДолга, 0)
+		ИНАЧЕ 0
+	КОНЕЦ КАК ДолгКлиента,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ПроцентДолга, 0) КАК ПроцентДолга,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ДатаСобытия, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаСобытия,
+	ЕСТЬNULL(СостоянияЗаказовКлиентов.ЕстьРасхожденияОрдерНакладная, ЛОЖЬ) КАК ЕстьРасхожденияОрдерНакладная,
+	СостоянияЭД.СостояниеЭДО,
+	СостоянияЭД.ПредставлениеСостояния,
+	ДокументЗаказКлиента.Автор,
+	ДокументЗаказКлиента.ЭтоЗаказКакСчет КАК ЭтоЗаказКакСчет,
+	&amp;ДополнительныеПоляСостояниеEDI КАК ДополнительныеПоляСостояниеEDI
+ИЗ
+	Документ.ЗаказКлиента КАК ДокументЗаказКлиента
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияЗаказовКлиентов КАК СостоянияЗаказовКлиентов
+		ПО (СостоянияЗаказовКлиентов.Заказ = ДокументЗаказКлиента.Ссылка)
+		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияПоОбъектамУчетаЭДО КАК СостоянияЭД
+		ПО (СостоянияЭД.СсылкаНаОбъект = ДокументЗаказКлиента.Ссылка)}</QueryText>
+					<MainTable>Document.ЗаказКлиента</MainTable>
+					<ListSettings>
+						<dcsset:filter>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+						</dcsset:filter>
+						<dcsset:order>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+						</dcsset:order>
+						<dcsset:conditionalAppearance>
+							<dcsset:viewMode>Normal</dcsset:viewMode>
+							<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+						</dcsset:conditionalAppearance>
+						<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+						<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+					</ListSettings>
+				</Settings>
+			</Attribute>
+		</Attributes>
 	</BaseForm>
 </Form>

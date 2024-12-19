@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>24.12.17</Version>
+			<Version>24.12.19</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -113,6 +113,7 @@
 			<CommonPicture>СостояниеПроверкиКонтрагента</CommonPicture>
 			<CommonPicture>ВниманиеКрасный</CommonPicture>
 			<CommonPicture>ПустаяКартинка</CommonPicture>
+			<CommonPicture>Расш6270_Битрикс</CommonPicture>
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<SessionParameter>РабочееМестоКлиента</SessionParameter>
 			<Role>Расш6270_ОсновнаяРоль</Role>
@@ -228,6 +229,9 @@
 			<Catalog>ЭквайринговыеТерминалы</Catalog>
 			<Catalog>НастройкиРМК</Catalog>
 			<Catalog>ДоговорыЭквайринга</Catalog>
+			<Catalog>СоглашенияСКлиентами</Catalog>
+			<Catalog>Приоритеты</Catalog>
+			<Catalog>ГрафикиОплаты</Catalog>
 			<Document>ЧекККМ</Document>
 			<Document>УстановкаЦенНоменклатуры</Document>
 			<Document>ЗаказКлиента</Document>
@@ -282,6 +286,8 @@
 			<Enum>ВидыПравилНачисленияБонусныхБаллов</Enum>
 			<Enum>Периодичность</Enum>
 			<Enum>СпособыПроведенияПлатежей</Enum>
+			<Enum>СтатусыЗаказовКлиентов</Enum>
+			<Enum>СостоянияЗаказовКлиентов</Enum>
 			<Report>НеликвидыЧерезОбъект</Report>
 			<Report>ОтчетТорговаяНаценка</Report>
 			<Report>Расш6270_ОтчетОстаткиНаборов</Report>
@@ -315,6 +321,7 @@
 			<InformationRegister>СостоянияПоОбъектамУчетаЭДО</InformationRegister>
 			<InformationRegister>Расш6270_ОстаткиДляСайта</InformationRegister>
 			<InformationRegister>Расш6270_ДоступыПользователей</InformationRegister>
+			<InformationRegister>СостоянияЗаказовКлиентов</InformationRegister>
 			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
 			<AccumulationRegister>ТоварыКОтгрузке</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>
