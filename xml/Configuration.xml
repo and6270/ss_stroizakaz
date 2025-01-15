@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>24.12.19</Version>
+			<Version>25.01.15</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -248,6 +248,7 @@
 			<Document>ОперацияПоПлатежнойКарте</Document>
 			<Document>РеализацияТоваровУслуг</Document>
 			<Document>ЗаказНаПеремещение</Document>
+			<Document>ИсправлениеРазвернутогоСальдоТоваровОрганизаций</Document>
 			<Enum>СостоянияУстановокЦенНоменклатуры</Enum>
 			<Enum>ХозяйственныеОперации</Enum>
 			<Enum>СпособыДоставки</Enum>

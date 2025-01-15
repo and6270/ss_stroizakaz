@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="b7d44020-0d3e-4b77-8e24-327ab0278b9f">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ИсправлениеРазвернутогоСальдоТоваровОрганизаций" category="Object">
+				<xr:TypeId>07c4bc6e-2a88-48fc-b14c-92789fccbc2e</xr:TypeId>
+				<xr:ValueId>8db168a8-bfdc-4c5f-8237-b19f4f23dfe5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ИсправлениеРазвернутогоСальдоТоваровОрганизаций" category="Ref">
+				<xr:TypeId>13d1a8be-a56e-4544-8388-93763745fe9a</xr:TypeId>
+				<xr:ValueId>08344f2a-a8e7-48fe-9969-93d96643d701</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ИсправлениеРазвернутогоСальдоТоваровОрганизаций" category="Selection">
+				<xr:TypeId>cabdf229-c5a0-45fa-ae1f-5a4615717e0a</xr:TypeId>
+				<xr:ValueId>0670a263-06f4-4e94-acdb-5bdbff081274</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ИсправлениеРазвернутогоСальдоТоваровОрганизаций" category="List">
+				<xr:TypeId>d3b52215-3fac-427c-a670-e912e9836306</xr:TypeId>
+				<xr:ValueId>3831233e-545a-4d1c-8fef-cb68ddb4de0b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ИсправлениеРазвернутогоСальдоТоваровОрганизаций" category="Manager">
+				<xr:TypeId>62396476-e7e5-4e21-9b2d-9e0b8f31a13e</xr:TypeId>
+				<xr:ValueId>c1a3b690-b70e-4f6a-95cd-6cb24e0cfaf6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИсправлениеРазвернутогоСальдоТоваровОрганизаций</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>523aebfa-6119-47ec-8687-966b6accd368</ExtendedConfigurationObject>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="68f7fc9a-e72d-4c49-a3e0-d95b993f16df">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>dbdc3dba-1082-48c4-8b6e-40aaca8637a1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9947c12e-dd39-46db-8bca-ccc013cf4962">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Организация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e3fb713d-37f4-4c30-a1fe-f5012f530282</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ec7b77c2-1d2a-4736-b3fb-bd1a5e3df432">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ответственный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b4431ef2-84b4-425e-bcf5-8dd6a0e1d838</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаСписка</Form>
+			<TabularSection uuid="81cfee17-acdc-4287-830c-be050570c87e">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ИсправлениеРазвернутогоСальдоТоваровОрганизаций.Исправления" category="TabularSection">
+						<xr:TypeId>1ebf0427-0ef8-4b54-8cf9-e8aeae275c92</xr:TypeId>
+						<xr:ValueId>76cf77ce-5c30-460d-a677-7564c8bf482c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ИсправлениеРазвернутогоСальдоТоваровОрганизаций.Исправления" category="TabularSectionRow">
+						<xr:TypeId>4384538e-0cc8-47ef-ab2f-e4acb537a434</xr:TypeId>
+						<xr:ValueId>7ac06fd5-08bb-4dae-903f-cf6530564c80</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Исправления</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>56631d70-684f-48db-bf05-a62221fd72f3</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="b6b1a939-8500-49e9-8f36-21fcdd19d1e3">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>АналитикаУчетаНоменклатуры</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>5a743e0b-d179-4002-8be4-a89eb73948c9</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.КлючиАналитикиУчетаНоменклатуры</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="6b85fc58-9a18-4957-a94c-d078eaf7f204">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ВидЗапасовОприходования</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>7d9ed52b-feaa-4394-abc3-9e2d14348246</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ВидыЗапасов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="857f724b-9bb6-4f50-b026-431c1df9aea5">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ВидЗапасовСписания</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>737982ec-a8d0-4974-b7a1-ef0a2e8e67c1</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ВидыЗапасов</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="95806b5f-45f0-4292-8330-a85a569a9c21">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>НомерГТДСписания</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>88264c19-fc1c-4f52-b491-eca65605642b</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.НомераГТД</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="596ee390-fecf-4ed8-87db-6dddf1793d5d">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>НомерГТДОприходования</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>2756e517-3917-4fb7-ba1f-07d4b6f3cdc3</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:CatalogRef.НомераГТД</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="12aa997c-afd8-4a12-b9dd-f0a6604c361b">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Количество</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>54312313-3052-4b04-9f0e-bdd1025dff5c</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="cbbcfef7-1ee5-4848-83ae-27e2cec72fb5">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КоличествоПолучено</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>7a29662d-8c03-40f5-afdc-e3716a60f184</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="43f2186f-40f0-4f14-8bfe-36b611afeaf6">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КоличествоКСписанию</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>9b187b28-1591-4554-a722-41d492ec2caa</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>15</v8:Digits>
+									<v8:FractionDigits>3</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>
