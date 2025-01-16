@@ -69,6 +69,7 @@
 		<Metadata name="Catalog.ДоговорыЭквайринга" id="bbd710bf-e318-4534-a554-f20a4a9a0716" configVersion="06fae103e5227c83eb6a03035d53652b95893a13">
 			<Metadata name="Catalog.ДоговорыЭквайринга.Attribute.СпособПроведенияПлатежа" id="a41dade5-3983-4c7a-ba80-7207aa72af9d"/>
 		</Metadata>
+		<Metadata name="Catalog.ЗначенияСвойствОбъектов" id="714b4af7-5346-4cbc-b1f2-90a53f8e18d8" configVersion="d91a2e10ba131510e961e19fcc0d4395256073a4"/>
 		<Metadata name="Catalog.ЗоныДоставки" id="63f2fd8f-95a8-4323-9f8e-3942ee74f009" configVersion="fd4661e11c87077057638d5f89d145b787fabafa"/>
 		<Metadata name="Catalog.КартыЛояльности" id="3ec4978b-f174-4c81-bb2d-f634079da9db" configVersion="bb596f14b96a32241be97fd56708d5ba828f46f5"/>
 		<Metadata name="Catalog.КартыЛояльности.Form.СчитываниеКартыЛояльности" id="11dfd6ec-a528-4513-a3a6-4a00b866e1d2" configVersion="31ac9f0cc6c60691025dafd3a001e2b9e2129979"/>
@@ -318,7 +319,7 @@
 		<Metadata name="CommonPicture.ТранспортнаяНакладная" id="adb9517a-3a16-4675-9bf4-e2a512c773fb" configVersion="41e97dabcab678fed353a275f0f3ddb1657ff420"/>
 		<Metadata name="CommonPicture.УстановитьЦены" id="15db5f5f-fa7d-4e8d-9044-b95541bd32d3" configVersion="3b29f3480b3ce81a1fd0879417e7dd9dd68673e4"/>
 		<Metadata name="CommonPicture.ФильтрПоСвойствам" id="a83e3187-bf2f-45ea-b796-fad60aeb828d" configVersion="1ffb02034bad44352bc4f4db1f76c292eb55d6cd"/>
-		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="3328150a72db1cbc70057b76155f1fde711fa70c"/>
+		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="5269247a0be696d72aa4928ad669e7fbeb36ede3"/>
 		<Metadata name="Constant.Расш6270_БитриксВебхук" id="685c769c-e790-4f78-9251-96093df2991e" configVersion="fef07098e5b05f5e18c7a2ac97dedd52804f71a8"/>
 		<Metadata name="Constant.Расш6270_Доступ" id="e323fe85-7b0e-4eb5-b5ef-7967a8f1aaa5" configVersion="fce94b822c3209f3b68b54d428c9035bcc20a1aa"/>
 		<Metadata name="Constant.Расш6270_КодДоступаСайта" id="ebaaa548-aab3-45fb-afe3-a6a5dfddd50f" configVersion="5fd1cde8f7a9668fc0643684cdcc1cc82933a122"/>
@@ -326,7 +327,7 @@
 		<Metadata name="Constant.Расш6270_ТокенТелеграм" id="03186905-afd1-4263-a473-0324a575d90d" configVersion="91123accef66516b3067483341c95d7610bcab4a"/>
 		<Metadata name="Constant.Расш6270_ЧатСтройЗаказ" id="3a88e0ca-3839-4535-aaa6-be6ed0acdc6b" configVersion="c600a7efc3cf036c70289867b95a2be17bc9c770"/>
 		<Metadata name="Constant.Расш6270_ЧатЯндексМаркета" id="8fa8e3bc-2dcf-4abb-be6b-da85f17496d9" configVersion="c2fd93b8809d1b099c3b421d4a7235f0025a07c8"/>
-		<Metadata name="DataProcessor.ВозвратСОбъектов" id="16e53118-2d56-4b3f-a235-33c2b1192332" configVersion="87fbb855bf2acf86dfe736e915f1c3015d21b574">
+		<Metadata name="DataProcessor.ВозвратСОбъектов" id="16e53118-2d56-4b3f-a235-33c2b1192332" configVersion="f920488d8ac574f55af8cc404400da88fdce4bd8">
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ТоварыИзЗаказов.Attribute.Количество" id="0aed18a2-0989-4db8-8fad-ff0b0ac8cad0"/>
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ДокументыЗаказов.Attribute.Заказ" id="0b870909-93ce-4cbd-ac4c-867594efaff8"/>
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ТоварыИзЗаказов" id="0db7e6dd-ce39-4eeb-8fff-a80d8481e000"/>
@@ -335,6 +336,7 @@
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ТоварыИзЗаказов.Attribute.ВидЦены" id="42324329-2bc6-4e23-a505-87442abb9381"/>
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ДокументыЗаказов.Attribute.Выбран" id="4ef1ef54-78e0-4d5d-be23-e490cd88b567"/>
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ТоварыИзЗаказов.Attribute.Номенклатура" id="541a5a69-d1b4-426d-897c-930120047c4b"/>
+			<Metadata name="DataProcessor.ВозвратСОбъектов.Attribute.Стройка" id="68010be0-a12c-495d-8cac-8de263f82b42"/>
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ДокументыЗаказов" id="71174ca9-d1d8-44a7-b529-a2e74deda095"/>
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ТоварыИзЗаказов.Attribute.ЗаказСсылка" id="8295435e-ffd7-446e-96cd-dfc159412c59"/>
 			<Metadata name="DataProcessor.ВозвратСОбъектов.TabularSection.ТоварыИзЗаказов.Attribute.Цена" id="86597bb4-d20a-4326-bbc3-9585f1f6c932"/>
@@ -346,7 +348,7 @@
 			<Metadata name="DataProcessor.ВозвратСОбъектов.Attribute.Контрагент" id="f1001509-837b-4b40-b50f-7dce0c86eaaa"/>
 		</Metadata>
 		<Metadata name="DataProcessor.ВозвратСОбъектов.Form.Форма" id="82d7d4ce-8b7d-4edc-8433-c1b980ad4dee" configVersion="bc866d40a14de9f7aa8d907fa7bb791e858514cd"/>
-		<Metadata name="DataProcessor.ВозвратСОбъектов.Form.Форма.Form" id="82d7d4ce-8b7d-4edc-8433-c1b980ad4dee.0" configVersion="2b4fb61a9931f8104c1e49a76bf851d2965ef94c"/>
+		<Metadata name="DataProcessor.ВозвратСОбъектов.Form.Форма.Form" id="82d7d4ce-8b7d-4edc-8433-c1b980ad4dee.0" configVersion="2a56ff3cd7a6780c3653c49c18fea70758619c6b"/>
 		<Metadata name="DataProcessor.ВыгрузкаОстатковВФайл" id="32a76428-a977-445f-b962-889d89783b7b" configVersion="dd50116cd748835d0ff1e2fc44c12a9feee0e1cd"/>
 		<Metadata name="DataProcessor.ВыгрузкаОстатковВФайл.Form.Форма" id="92cab41f-54db-4558-8543-760e2abdb2a2" configVersion="f9643a55ce4d971062c3c5babffd08f67d09fd75"/>
 		<Metadata name="DataProcessor.ВыгрузкаОстатковВФайл.Form.Форма.Form" id="92cab41f-54db-4558-8543-760e2abdb2a2.0" configVersion="a8d9f402020402e578bdf0e4799b8d30479577fc"/>
@@ -804,6 +806,10 @@
 		<Metadata name="EventSubscription.Расш6270_ДокументыОбработкаПроведения" id="b888ee3f-5c17-456c-80f5-7f0151d9672e" configVersion="65e02a710b7895b35e77cac9a2136481cc3ae335"/>
 		<Metadata name="EventSubscription.Расш6270_ДокументыПередЗаписью" id="064e37e1-5377-4581-bd01-87601afe6b7c" configVersion="b6ac4a6a9d413e69ef155d09604f29f9c4f70f35"/>
 		<Metadata name="EventSubscription.Расш6270_СправочникиПриКопировании" id="5a1ac564-4635-44c3-850a-6ab7ba036d47" configVersion="2ab962a2d010992b0419762e597e31fdffd7d156"/>
+		<Metadata name="InformationRegister.ДополнительныеСведения" id="5eb80ee9-2ac2-431a-8667-38b342cb2144" configVersion="72d0fca2d8cd829b33abd77203a6c8b66934eeea">
+			<Metadata name="InformationRegister.ДополнительныеСведения.Resource.Значение" id="1430dd68-289c-41eb-8259-5f02043fd55a"/>
+			<Metadata name="InformationRegister.ДополнительныеСведения.Dimension.Объект" id="21b158cb-014b-4538-b19b-32888231f9c3"/>
+		</Metadata>
 		<Metadata name="InformationRegister.НоменклатураСегмента" id="20fb4642-bf46-4b56-a474-1a8e180d0256" configVersion="a038764aeb165eef1077f1986dd8d036f4c891ac">
 			<Metadata name="InformationRegister.НоменклатураСегмента.Dimension.Номенклатура" id="c9a43ec9-9d92-4bd8-85f6-7f8a5dae6653"/>
 			<Metadata name="InformationRegister.НоменклатураСегмента.Dimension.Сегмент" id="fbf56a3b-1887-40f1-acbc-2750c54c60d5"/>

@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>25.01.15</Version>
+			<Version>25.01.16</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -232,6 +232,7 @@
 			<Catalog>СоглашенияСКлиентами</Catalog>
 			<Catalog>Приоритеты</Catalog>
 			<Catalog>ГрафикиОплаты</Catalog>
+			<Catalog>ЗначенияСвойствОбъектов</Catalog>
 			<Document>ЧекККМ</Document>
 			<Document>УстановкаЦенНоменклатуры</Document>
 			<Document>ЗаказКлиента</Document>
@@ -323,6 +324,7 @@
 			<InformationRegister>Расш6270_ОстаткиДляСайта</InformationRegister>
 			<InformationRegister>Расш6270_ДоступыПользователей</InformationRegister>
 			<InformationRegister>СостоянияЗаказовКлиентов</InformationRegister>
+			<InformationRegister>ДополнительныеСведения</InformationRegister>
 			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
 			<AccumulationRegister>ТоварыКОтгрузке</AccumulationRegister>
 			<AccumulationRegister>БонусныеБаллы</AccumulationRegister>

@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="44">
 			<Behavior>Usual</Behavior>
@@ -8,31 +11,51 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="45"/>
 			<ChildItems>
-				<Button name="Заполнить" id="46">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ЗаполнитьЗаказы</CommandName>
-					<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="47"/>
-				</Button>
-				<Button name="ЗаполнитьТовары" id="94">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ЗаполнитьТовары</CommandName>
-					<ExtendedTooltip name="ЗаполнитьТоварыРасширеннаяПодсказка" id="95"/>
-				</Button>
-				<Button name="УбратьИзЗаказов" id="48">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.УбратьИзЗаказов</CommandName>
-					<ExtendedTooltip name="УбратьИзЗаказовРасширеннаяПодсказка" id="49"/>
-				</Button>
-				<InputField name="Дата" id="1">
-					<DataPath>Объект.Дата</DataPath>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="3"/>
-				</InputField>
-				<InputField name="Контрагент" id="4">
-					<DataPath>Объект.Контрагент</DataPath>
-					<ContextMenu name="КонтрагентКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="6"/>
-				</InputField>
+				<UsualGroup name="Группа5" id="101">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<InputField name="Дата" id="1">
+							<DataPath>Объект.Дата</DataPath>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Контрагент" id="4">
+							<DataPath>Объект.Контрагент</DataPath>
+							<ContextMenu name="КонтрагентКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Стройка" id="96">
+							<DataPath>Объект.Стройка</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтройкаКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="СтройкаРасширеннаяПодсказка" id="98"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="99">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<Button name="Заполнить" id="46">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьЗаказы</CommandName>
+							<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="47"/>
+						</Button>
+						<Button name="ЗаполнитьТовары" id="94">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьТовары</CommandName>
+							<ExtendedTooltip name="ЗаполнитьТоварыРасширеннаяПодсказка" id="95"/>
+						</Button>
+						<Button name="УбратьИзЗаказов" id="48">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УбратьИзЗаказов</CommandName>
+							<ExtendedTooltip name="УбратьИзЗаказовРасширеннаяПодсказка" id="49"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<Pages name="ГруппаСтраницы" id="57">
