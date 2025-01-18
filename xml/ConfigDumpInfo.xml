@@ -272,7 +272,7 @@
 		<Metadata name="CommonModule.Расш6270_Действия" id="b92436db-45fe-4555-9159-1f8b6fffd987" configVersion="18c14603a4507628b3aa81400b2d64a318f5e39b"/>
 		<Metadata name="CommonModule.Расш6270_Действия.Module" id="b92436db-45fe-4555-9159-1f8b6fffd987.0" configVersion="ad28eb1c581261eeb95bdbd3389076970515620d"/>
 		<Metadata name="CommonModule.Расш6270_МегаГрупп" id="6b22c184-cad5-443d-b552-94843c86ab48" configVersion="a9b50a33393e17194f4d7d034d67fcf57fba72f2"/>
-		<Metadata name="CommonModule.Расш6270_МегаГрупп.Module" id="6b22c184-cad5-443d-b552-94843c86ab48.0" configVersion="e78149770609d06ef5204a656dbc354e499559fc"/>
+		<Metadata name="CommonModule.Расш6270_МегаГрупп.Module" id="6b22c184-cad5-443d-b552-94843c86ab48.0" configVersion="da93b62a240143c9ad454b5729d4363bd6df755f"/>
 		<Metadata name="CommonModule.Расш6270_Отладка" id="c1099ed9-7671-40d8-966c-315c0d6286ee" configVersion="17c9d2b8b905f6faa9d09ec4b80c3ada04eaa2f1"/>
 		<Metadata name="CommonModule.Расш6270_Отладка.Module" id="c1099ed9-7671-40d8-966c-315c0d6286ee.0" configVersion="32d03fd3a329059a2f550e8ac058f048552dcbce"/>
 		<Metadata name="CommonModule.Расш6270_Отчеты" id="694ebd84-ff52-4442-8a03-974fe9fe36b1" configVersion="adf238fae97f43e9606f5ec647095d95ab195b28"/>
@@ -319,7 +319,7 @@
 		<Metadata name="CommonPicture.ТранспортнаяНакладная" id="adb9517a-3a16-4675-9bf4-e2a512c773fb" configVersion="41e97dabcab678fed353a275f0f3ddb1657ff420"/>
 		<Metadata name="CommonPicture.УстановитьЦены" id="15db5f5f-fa7d-4e8d-9044-b95541bd32d3" configVersion="3b29f3480b3ce81a1fd0879417e7dd9dd68673e4"/>
 		<Metadata name="CommonPicture.ФильтрПоСвойствам" id="a83e3187-bf2f-45ea-b796-fad60aeb828d" configVersion="1ffb02034bad44352bc4f4db1f76c292eb55d6cd"/>
-		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="5269247a0be696d72aa4928ad669e7fbeb36ede3"/>
+		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="f6c3f0010dfb5144214bef5812ccd801ec3a83ef"/>
 		<Metadata name="Constant.Расш6270_БитриксВебхук" id="685c769c-e790-4f78-9251-96093df2991e" configVersion="fef07098e5b05f5e18c7a2ac97dedd52804f71a8"/>
 		<Metadata name="Constant.Расш6270_Доступ" id="e323fe85-7b0e-4eb5-b5ef-7967a8f1aaa5" configVersion="fce94b822c3209f3b68b54d428c9035bcc20a1aa"/>
 		<Metadata name="Constant.Расш6270_КодДоступаСайта" id="ebaaa548-aab3-45fb-afe3-a6a5dfddd50f" configVersion="5fd1cde8f7a9668fc0643684cdcc1cc82933a122"/>

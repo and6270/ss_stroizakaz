@@ -614,8 +614,12 @@
 	
 	ДополнительныеПараметры = Новый Структура("Заголовки,Cookies", Заголовки, Куки);
 	// Запросим файл csv с заказами
-	Ответ = Коннектор.Post("https://cp21.megagroup.ru/my/s3/cms/v1/shop2/order/export/?act=queue&popup=1", 
+	//Ответ = Коннектор.Post("https://cp21.megagroup.ru/my/s3/cms/v1/shop2/order/export/?act=queue&popup=1", 
+	//					Данные, ДополнительныеПараметры);
+						
+	Ответ = Коннектор.Post("https://cp21.megagroup.ru/-/cms/v1/shop2/order/export/?act=queue&popup=1", 
 						Данные, ДополнительныеПараметры);
+						
 	Если Ответ.КодСостояния <> 200 Тогда
 		СтрокаОтвет = Коннектор.КакТекст(Ответ);
 		Возврат Результат;
