@@ -26,7 +26,7 @@
 	ЗаголовкиЗагрузка = Заголовки;
 	ЗаголовкиЗагрузка.Вставить("content-type", "multipart/form-data; boundary=" + Разделитель);
 	
-	АдреснаяСтрока = "/my/s3/cms/v1/file/?act=edit&ver_id=1172010&access=" + ДоступСайта + "&orderby=created&time=1634070860118";
+	АдреснаяСтрока = "/-/cms/v1/file/?act=edit&ver_id=1172010&access=" + ДоступСайта + "&orderby=created&time=1634070860118";
 	Запрос = Новый HTTPЗапрос(АдреснаяСтрока, ЗаголовкиЗагрузка);
 	МассивДата = Новый Массив;
 	МассивДата.Добавить(СоздатьСообщение_Текст("ver_id", "1172010"));
@@ -45,7 +45,7 @@
 		Возврат Ложь;
 	КонецЕсли;
 	
-	Запрос = Новый HTTPЗапрос("/my/s3/cms/v1/file/?type_id=2&ver_id=1172010&access=" + ДоступСайта + "&rnd=7152",Заголовки);
+	Запрос = Новый HTTPЗапрос("/-/cms/v1/file/?type_id=2&ver_id=1172010&access=" + ДоступСайта + "&rnd=7152",Заголовки);
 	//)Черных						   
 	Результат = Соединение.Получить(Запрос);
 	Если Результат.КодСостояния <> 200 Тогда
@@ -72,7 +72,7 @@
 	ЗаголовкиИмпорт = Заголовки;
 	ЗаголовкиЗагрузка.Вставить("content-type", "application/x-www-form-urlencoded; charset=UTF-8");
 	
-	Запрос = Новый HTTPЗапрос("/my/s3/cms/v1/shop2/import/products/?ver_id=1172010&access=" + ДоступСайта + "&shop_id=1468641&popup=1&rnd=2814&xhr=1&file_id=" + ИдФайла + "&from_shop2_import=1&act=queue", ЗаголовкиИмпорт);
+	Запрос = Новый HTTPЗапрос("/-/cms/v1/shop2/import/products/?ver_id=1172010&access=" + ДоступСайта + "&shop_id=1468641&popup=1&rnd=2814&xhr=1&file_id=" + ИдФайла + "&from_shop2_import=1&act=queue", ЗаголовкиИмпорт);
 	КодФормыИмпорта = "key_field=code_1c&=&import_mode=insert_or_update&=&unmatched_mode=&=&folder_sep=comma&=&preserve_unset_val=1&file_id="+ ИдФайла +"&mode=queue&access=" + ДоступСайта + "&ver_id=1172010&xhr=1&rnd=8756";
 	Запрос.УстановитьТелоИзСтроки(КодФормыИмпорта,КодировкаТекста.UTF8, ИспользованиеByteOrderMark.НеИспользовать);
 	Результат = Соединение.ОтправитьДляОбработки(Запрос);
