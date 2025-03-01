@@ -534,18 +534,6 @@
 							</dcsset:order>
 							<dcsset:selection>
 								<dcsset:item xsi:type="dcsset:SelectedItemField">
-									<dcsset:field>Склад</dcsset:field>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:SelectedItemField">
-									<dcsset:field>Организация</dcsset:field>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:SelectedItemField">
-									<dcsset:field>ТипДокумента</dcsset:field>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:SelectedItemField">
-									<dcsset:field>ВидНоменклатуры</dcsset:field>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:SelectedItemField">
 									<dcsset:field>Номенклатура</dcsset:field>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -766,15 +754,6 @@
 							</dcsset:order>
 							<dcsset:selection>
 								<dcsset:item xsi:type="dcsset:SelectedItemField">
-									<dcsset:field>Склад</dcsset:field>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:SelectedItemField">
-									<dcsset:field>Организация</dcsset:field>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:SelectedItemField">
-									<dcsset:field>ВидНоменклатуры</dcsset:field>
-								</dcsset:item>
-								<dcsset:item xsi:type="dcsset:SelectedItemField">
 									<dcsset:field>Номенклатура</dcsset:field>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -840,6 +819,155 @@
 						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Партнер</dcsset:left>
+						<dcsset:comparisonType>NotInList</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:ValueListType">
+							<v8:valueType/>
+							<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+						</dcsset:right>
+						<dcsset:userSettingID>f8b1e3f7-34aa-4319-ba30-364cf8ada3c7</dcsset:userSettingID>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>СебестоимостьОбщая</dcsset:field>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:field>Прибыль</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+									</v8:item>
+								</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+						<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+						<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Номенклатура</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Себестоимость</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Количество</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Сумма</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>СебестоимостьОбщая</dcsset:field>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Прибыль</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:conditionalAppearance>
+							<dcsset:item>
+								<dcsset:selection/>
+								<dcsset:filter/>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>ЦветТекста</dcscor:parameter>
+										<dcscor:value xsi:type="v8ui:Color">#808080</dcscor:value>
+									</dcscor:item>
+								</dcsset:appearance>
+								<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+								<dcsset:useInFieldsHeader>DontUse</dcsset:useInFieldsHeader>
+							</dcsset:item>
+							<dcsset:item>
+								<dcsset:selection>
+									<dcsset:item>
+										<dcsset:field>СебестоимостьОбщая</dcsset:field>
+									</dcsset:item>
+									<dcsset:item>
+										<dcsset:field>Прибыль</dcsset:field>
+									</dcsset:item>
+								</dcsset:selection>
+								<dcsset:filter/>
+								<dcsset:appearance>
+									<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+										<dcscor:parameter>Формат</dcscor:parameter>
+										<dcscor:value xsi:type="v8:LocalStringType">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>ЧЦ=15; ЧДЦ=2</v8:content>
+											</v8:item>
+										</dcscor:value>
+									</dcscor:item>
+								</dcsset:appearance>
+							</dcsset:item>
+						</dcsset:conditionalAppearance>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ВидНоменклатуры</dcsset:field>
+						<dcsset:groupType>Hierarchy</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Партнер</dcsset:left>
+						<dcsset:comparisonType>InList</dcsset:comparisonType>
+						<dcsset:right xsi:type="v8:ValueListType">
+							<v8:valueType/>
+							<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+						</dcsset:right>
+						<dcsset:userSettingID>02194400-9198-4e70-b4ba-c67aa32e5c92</dcsset:userSettingID>
+					</dcsset:item>
+				</dcsset:filter>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
