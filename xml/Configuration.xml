@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Расш6270_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>and6270@gmail.com</Vendor>
-			<Version>25.02.28</Version>
+			<Version>25.03.13</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation>
 				<v8:item>
@@ -132,6 +132,7 @@
 			<CommonModule>РозничныеПродажи</CommonModule>
 			<CommonModule>РозничныеПродажиКлиент</CommonModule>
 			<CommonModule>Расш6270_Битрикс24</CommonModule>
+			<CommonModule>ПодборТоваровВызовСервера</CommonModule>
 			<EventSubscription>Расш6270_ДокументыОбработкаПроведения</EventSubscription>
 			<EventSubscription>Расш6270_СправочникиПриКопировании</EventSubscription>
 			<EventSubscription>Расш6270_ДокументыПередЗаписью</EventSubscription>
