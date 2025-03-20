@@ -308,7 +308,6 @@
 			<DataProcessor>ЗагрузкаТоваровИзВнешнихФайлов</DataProcessor>
 			<DataProcessor>Расш6270_УстановкаЦенНоменклатурыИзТабДок</DataProcessor>
 			<DataProcessor>ВыгрузкаОстатковВФайл</DataProcessor>
-			<DataProcessor>ПодборТоваровВДокументПродажи</DataProcessor>
 			<DataProcessor>ЗагрузкаНоменклатуры</DataProcessor>
 			<DataProcessor>ПодборТоваровВДокументЗакупки</DataProcessor>
 			<DataProcessor>Расш6270_СравнениеЦенССайтом</DataProcessor>
