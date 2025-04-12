@@ -321,7 +321,7 @@
 		<Metadata name="CommonPicture.ТранспортнаяНакладная" id="adb9517a-3a16-4675-9bf4-e2a512c773fb" configVersion="41e97dabcab678fed353a275f0f3ddb1657ff420"/>
 		<Metadata name="CommonPicture.УстановитьЦены" id="15db5f5f-fa7d-4e8d-9044-b95541bd32d3" configVersion="3b29f3480b3ce81a1fd0879417e7dd9dd68673e4"/>
 		<Metadata name="CommonPicture.ФильтрПоСвойствам" id="a83e3187-bf2f-45ea-b796-fad60aeb828d" configVersion="1ffb02034bad44352bc4f4db1f76c292eb55d6cd"/>
-		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="d52a50ba8b03765f84051bf47c56bd09ccf7dedd"/>
+		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="dfcb04e7e9d3e7f8c46befc990f5ef5bd2519b81"/>
 		<Metadata name="Constant.Расш6270_БитриксВебхук" id="685c769c-e790-4f78-9251-96093df2991e" configVersion="fef07098e5b05f5e18c7a2ac97dedd52804f71a8"/>
 		<Metadata name="Constant.Расш6270_Доступ" id="e323fe85-7b0e-4eb5-b5ef-7967a8f1aaa5" configVersion="fce94b822c3209f3b68b54d428c9035bcc20a1aa"/>
 		<Metadata name="Constant.Расш6270_КодДоступаСайта" id="ebaaa548-aab3-45fb-afe3-a6a5dfddd50f" configVersion="5fd1cde8f7a9668fc0643684cdcc1cc82933a122"/>
@@ -764,7 +764,8 @@
 			<Metadata name="Enum.ТипыНалогообложенияНДС.EnumValue.ПродажаОблагаетсяЕНВД" id="a275c53e-3a1e-4a7c-a5d8-3265f580b908"/>
 			<Metadata name="Enum.ТипыНалогообложенияНДС.EnumValue.ПродажаНаЭкспорт" id="c0f2430c-2409-44c2-9f34-7592bb332f06"/>
 		</Metadata>
-		<Metadata name="Enum.ТипыНоменклатуры" id="b2229d15-95e5-466f-af78-e55336f85d9a" configVersion="0e2168e62cfc793bd49e49fde49f9aa255c80597">
+		<Metadata name="Enum.ТипыНоменклатуры" id="b2229d15-95e5-466f-af78-e55336f85d9a" configVersion="a9347bae7fadd85da9fdefd80f6b8c350046ba45">
+			<Metadata name="Enum.ТипыНоменклатуры.EnumValue.Товар" id="424153a6-6c84-402b-8357-3eb838e8e894"/>
 			<Metadata name="Enum.ТипыНоменклатуры.EnumValue.Набор" id="f75a1e76-1ff6-4709-b73b-48eb7624e11f"/>
 		</Metadata>
 		<Metadata name="Enum.ТипыНомеровГТД" id="89aa8900-8dc3-44d5-85f8-b5a298d9d483" configVersion="3047b73a7655947eb99c4609688429d5acccc30c"/>
@@ -905,7 +906,7 @@
 		<Metadata name="Report.Расш6270_ОтчетСнабжение2024.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="1d40c434-bdde-4e1e-b1c3-c814fef1800a.0" configVersion="968244f75608cbc9c41098bd6c8c6b50acde19b1"/>
 		<Metadata name="Report.Расш6270_ОтчетТовароведа" id="f1e73520-98db-4bfc-b022-e96aa299541e" configVersion="e5efa01fb713ca60bf4561109e459bd54b5f13a3"/>
 		<Metadata name="Report.Расш6270_ОтчетТовароведа.Template.ОсновнаяСхемаКомпоновкиДанных" id="616c7418-e0cd-4911-b42d-6873f6707c90" configVersion="f8b19d5dca82d6d40af7199704d8b84bfb52b2ab"/>
-		<Metadata name="Report.Расш6270_ОтчетТовароведа.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="616c7418-e0cd-4911-b42d-6873f6707c90.0" configVersion="ad2623379d0483d91fdf56d01b95f1e00247d165"/>
+		<Metadata name="Report.Расш6270_ОтчетТовароведа.Template.ОсновнаяСхемаКомпоновкиДанных.Template" id="616c7418-e0cd-4911-b42d-6873f6707c90.0" configVersion="8ad10c242fed536eae9ff0d351040434bdf35767"/>
 		<Metadata name="Role.Расш6270_ОсновнаяРоль" id="bc15a7fc-dc6f-4769-a7ec-e023d77ad271" configVersion="0dacea357f2095e5b47bb053428ecfc4b4f64920"/>
 		<Metadata name="ScheduledJob.Расш6270_ВыгрузкаКоличестваТоваровНаЯндексМаркет" id="c12f7536-0116-477c-96ad-5f40264e4ba7" configVersion="f72e717ebf9ed24b71b94816d24374bb7099ae04"/>
 		<Metadata name="ScheduledJob.Расш6270_ВыгрузкаКоличестваТоваровНаЯндексМаркет.Schedule" id="c12f7536-0116-477c-96ad-5f40264e4ba7.0" configVersion="4a71b0d49a0166ea52efa7f83ccaf18986e3fa8a"/>
