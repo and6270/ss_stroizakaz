@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="14e8ca74-aa2e-41db-a86f-96bb13f6e5ef">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ПомощникИсправленияОстатковТоваровОрганизаций" category="Object">
+				<xr:TypeId>55473071-e0fb-4395-8122-a11fca56f6d6</xr:TypeId>
+				<xr:ValueId>ff9b3157-ac48-4aeb-9b29-89d2a850f748</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ПомощникИсправленияОстатковТоваровОрганизаций" category="Manager">
+				<xr:TypeId>58652548-d085-4738-97fd-56f9c94a61ec</xr:TypeId>
+				<xr:ValueId>d75f05c2-25fa-4e5a-a3f6-e68b535eb474</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПомощникИсправленияОстатковТоваровОрганизаций</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c9ae10e1-1227-4170-8e97-886addde7690</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</DataProcessor>
+</MetaDataObject>

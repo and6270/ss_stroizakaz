@@ -321,7 +321,7 @@
 		<Metadata name="CommonPicture.ТранспортнаяНакладная" id="adb9517a-3a16-4675-9bf4-e2a512c773fb" configVersion="41e97dabcab678fed353a275f0f3ddb1657ff420"/>
 		<Metadata name="CommonPicture.УстановитьЦены" id="15db5f5f-fa7d-4e8d-9044-b95541bd32d3" configVersion="3b29f3480b3ce81a1fd0879417e7dd9dd68673e4"/>
 		<Metadata name="CommonPicture.ФильтрПоСвойствам" id="a83e3187-bf2f-45ea-b796-fad60aeb828d" configVersion="1ffb02034bad44352bc4f4db1f76c292eb55d6cd"/>
-		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="dfcb04e7e9d3e7f8c46befc990f5ef5bd2519b81"/>
+		<Metadata name="Configuration.СтройЗаказ" id="c313d857-5194-4434-bb55-c774c14a6c65" configVersion="ffff4c7c2cf5aebb2f493f05960332e5e39d0ec7"/>
 		<Metadata name="Constant.Расш6270_БитриксВебхук" id="685c769c-e790-4f78-9251-96093df2991e" configVersion="fef07098e5b05f5e18c7a2ac97dedd52804f71a8"/>
 		<Metadata name="Constant.Расш6270_Доступ" id="e323fe85-7b0e-4eb5-b5ef-7967a8f1aaa5" configVersion="fce94b822c3209f3b68b54d428c9035bcc20a1aa"/>
 		<Metadata name="Constant.Расш6270_КодДоступаСайта" id="ebaaa548-aab3-45fb-afe3-a6a5dfddd50f" configVersion="5fd1cde8f7a9668fc0643684cdcc1cc82933a122"/>
@@ -368,6 +368,8 @@
 		<Metadata name="DataProcessor.ПодборТоваровПоОтбору" id="afc1fa6e-315e-479e-8feb-fad966db3377" configVersion="de6e77f4d8a8821280a33f65e1b2cbb3fd138bca"/>
 		<Metadata name="DataProcessor.ПодборТоваровПоОтбору.Template.Макет" id="6dcf9275-587b-4e26-be31-75eea6210f0c" configVersion="1b6b000ed1454a4069eb4b37726cc427e69abc28"/>
 		<Metadata name="DataProcessor.ПодборТоваровПоОтбору.Template.Макет.Template" id="6dcf9275-587b-4e26-be31-75eea6210f0c.0" configVersion="c776168f13a4c48760586acf00cd97dab2eeb060"/>
+		<Metadata name="DataProcessor.ПомощникИсправленияОстатковТоваровОрганизаций" id="14e8ca74-aa2e-41db-a86f-96bb13f6e5ef" configVersion="165a0b0cbffad2228b10ecf95870da30fb4bfeab"/>
+		<Metadata name="DataProcessor.ПомощникИсправленияОстатковТоваровОрганизаций.ObjectModule" id="14e8ca74-aa2e-41db-a86f-96bb13f6e5ef.0" configVersion="d370ae3001214dc7c120afc60b2427ddea94f321"/>
 		<Metadata name="DataProcessor.Расш6270_СписаниеБонусов" id="2b7e5ec7-976b-4e69-aeaa-ae9f89fe39d2" configVersion="e76ff86590857718f9493ee4c1a12b512c39b29a"/>
 		<Metadata name="DataProcessor.Расш6270_СписаниеБонусов.Form.Форма" id="246481d5-53e3-4335-9d8b-574101f38b67" configVersion="27a5724bf3a62a02f46eb15cfd9f1952edbb3f0f"/>
 		<Metadata name="DataProcessor.Расш6270_СписаниеБонусов.Form.Форма.Form" id="246481d5-53e3-4335-9d8b-574101f38b67.0" configVersion="2b9aab39915f659febd3b0ce9b48f55cae8403b4"/>
